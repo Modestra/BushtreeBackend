@@ -58,7 +58,7 @@ jobs:
       - ssh_connection
     defaults:
       run:
-        working-directory: solaris
+        working-directory: bushtree
     steps:
       - uses: actions/checkout@v4
       - name: Create migrations and users
