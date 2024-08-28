@@ -54,6 +54,7 @@ jobs:
   create_migrations:
     name: Create Group of Users
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     needs:
       - ssh_connection
     defaults:
@@ -70,4 +71,4 @@ jobs:
           port: 22
           script: |
             cd ${{ secrets.DIRECTORY_ROOT }}
-            bash ./scripts/create-migrations.sh
+            docker exec -it backend bash ./scripts/create-migrations.sh
