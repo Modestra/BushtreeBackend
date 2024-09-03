@@ -10,7 +10,6 @@ jobs:
   ssh_connection:
     name: Connection on Virtual Machine
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/deploy'
     needs:
       - build
     steps:
@@ -54,7 +53,6 @@ jobs:
   create_migrations:
     name: Create Group of Users
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
     needs:
       - ssh_connection
     defaults:
