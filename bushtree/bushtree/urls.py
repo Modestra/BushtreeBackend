@@ -15,10 +15,19 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from bushtree.views import *
+from rest_framework.routers import DefaultRouter
+
+router = DefaultRouter()
+router.register(r"seccions", SeccionApiViewSet)
+
+get_user = SeccionApiViewSet.as_view({"get", "list"})
+set_user = SeccionApiViewSet.as_view({"post": "crate_seccion"})
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('getflower/', FLowerApiView.as_view(), name="getflower")
+    path('seccions/get', get_user),
+    path('seccions/create', set_user),
+    path('api/v1/', include(router.urls))
 ]

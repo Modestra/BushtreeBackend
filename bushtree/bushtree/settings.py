@@ -16,6 +16,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_SITE_URL = os.getenv('DEFAULT_SITE_URL', default='localhost:8000')
+
 DATABASE = os.getenv('DATABASE', default='sqlite')
 
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
@@ -86,6 +87,17 @@ if DATABASE == 'sqlite':
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
+        },
+        "nonrel": {
+            "ENGINE": "djongo",
+            "NAME": os.getenv('MONGO_DB_NAME'),
+            "CLIENT": {
+                "host": os.getenv('MONGO_DB_HOST'),
+                "port": os.getenv('MONGO_DB_PORT'),
+            },
+            'TEST': {
+                'MIRROR': 'default',
+            },
         }
     }
 elif DATABASE == 'postgres':
@@ -97,6 +109,18 @@ elif DATABASE == 'postgres':
             'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'django'),
             'HOST': os.getenv('DB_HOST', 'django'),
             'POST': os.getenv('DB_PORT', 'django'),
+        },
+        "nonrel": {
+            "ENGINE": "djongo",
+            "NAME": os.getenv('MONGO_DB_NAME'),
+            "CLIENT": {
+                "host": os.getenv('MONGO_DB_HOST'),
+                "username": os.getenv('MONGO_DB_USERNAME'),
+                "password": os.getenv('MONGO_DB_PASSWORD'),
+            },
+            'TEST': {
+                'MIRROR': 'default',
+            },
         }
     }
 

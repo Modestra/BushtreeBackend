@@ -1,7 +1,15 @@
 import uuid
 from django.db import models 
+from djongo import models as mongo_models
 
-class Flowers(models.Model):
+class Seccion(models.Model):
+    id = models.AutoField(primary_key=True)
+    username = models.CharField(max_length=100)
+    date = models.TextField()
+
+
+class Flowers(models.Model): 
+    """Форма цветника для получения базы данных"""
 
     id = models.AutoField(primary_key=True)
     name = models.TextField(null=False)
@@ -15,4 +23,9 @@ class Flowers(models.Model):
     color_bloss_hex = models.CharField(max_length=8)
     color_leaves_name = models.CharField(max_length=20)
     color_leaves_hex = models.CharField(max_length=8)
+
+class Garden(mongo_models.Model):
+    """Получение картинок по названию цветка в MongoDB"""
+    name = mongo_models.CharField(max_length=100)
+    image = mongo_models.ImageField(upload_to='images/', height_field=None, width_field=None, max_length=None)
 

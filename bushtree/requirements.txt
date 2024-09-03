@@ -17,7 +17,7 @@ cron-descriptor==1.4.0
 cryptography==41.0.7
 defusedxml==0.7.1
 diff-match-patch==20230430
-Django==4.2.7
+django==4.1.13
 django-autocomplete-light==3.9.7
 django-celery-beat==2.5.0
 django-cors-headers==4.3.1
@@ -30,6 +30,7 @@ django-templated-mail==1.1.1
 django-timezone-field==6.1.0
 djangorestframework==3.14.0
 djangorestframework-simplejwt==5.3.1
+djongo==1.3.6
 djoser==2.2.2
 dnspython==2.4.2
 drf-yasg==1.21.7
@@ -47,6 +48,7 @@ jwcrypto==1.5.6
 kombu==5.3.4
 MarkupPy==1.14
 mccabe==0.7.0
+mongoengine==0.29.0
 numpy==1.26.4
 oauthlib==3.2.2
 odfpy==1.4.1
@@ -70,6 +72,7 @@ python-dotenv==1.0.0
 python-json-logger==2.0.7
 python3-openid==3.2.0
 pytz==2023.3.post1
+pymongo==4.8.0
 PyYAML==6.0.1
 redis==5.0.1
 reportlab==4.0.8
