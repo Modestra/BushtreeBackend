@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.postgres',
+    'bushtree',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [

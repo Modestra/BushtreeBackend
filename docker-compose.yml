@@ -15,6 +15,8 @@ services:
       - backend
     depends_on:
       - postgress
+    volumes:
+      - ./scripts:/scripts
   postgress:
     container_name: postgres_db
     image: postgres
@@ -36,6 +38,18 @@ services:
       - pgadmin:/var/lib/pgadmin
     depends_on:
       - postgress
+  mongodb:
+    image: mongo:latest
+    container_name: mongo_bushtree
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: Modestra
+      MONGO_INITDB_ROOT_PASSWORD: Terrarik22
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongoDb:/data/db
+      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 volumes:
+  dbdata6:
   postgres-data:
   pgadmin:

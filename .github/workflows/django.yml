@@ -2,29 +2,73 @@ name: Django CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master", "deploy"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master", "deploy"]
 
 jobs:
-  build:
+  ssh_connection:
+    name: Connection on Virtual Machine
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/deploy'
+    needs:
+      - build
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Executing remote ssh commands to deploy
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd ${{ secrets.DIRECTORY_ROOT }}
+            git pull origin deploy
+            bash ./scripts/docker-install.sh
 
+  build:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 4
       matrix:
-        python-version: [3.7, 3.8, 3.9]
-
+        python-version: [3.12]
+    defaults:
+      run:
+        working-directory: bushtree
     steps:
-    - uses: actions/checkout@v4
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v3
-      with:
-        python-version: ${{ matrix.python-version }}
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r requirements.txt
-    - name: Run Tests
-      run: |
-        python manage.py test
+      - uses: actions/checkout@v4
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run Tests
+        run: |
+          python manage.py test
+
+  create_migrations:
+    name: Create Group of Users
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    needs:
+      - ssh_connection
+    defaults:
+      run:
+        working-directory: bushtree
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create migrations and users
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd ${{ secrets.DIRECTORY_ROOT }}
+            docker exec -it backend bash ./scripts/create-migrations.sh
