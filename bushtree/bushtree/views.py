@@ -8,29 +8,27 @@ from bushtree.models import *
 from bushtree.mixin import *
 import array
 
-class FLowerApiView(APIView):
+class FlowerApiViewSet(viewsets.ModelViewSet):
     
-    def get(self, request):
-        flowers = Flowers.objects.all()
-        return Response({"data": flowers}, status=status.HTTP_200_OK)
+    queryset = Flowers.objects.all()
+    serializer_class = FlowerSerializer
 
-class SeccionApiViewSet(viewsets.ModelViewSet):
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
     
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
+
+class SeccionsApiViewSet(viewsets.ModelViewSet):
+
     queryset = Seccion.objects.all()
     serializer_class = SeccionSerializer
 
     def list(self, request, *args, **kwargs):
-        seccions = self.get_queryset()
-        serializers = self.get_serializer(seccions)
-        return Response(serializers.data, status=status.HTTP_200_OK)
+        return super().list(request, *args, **kwargs)
     
-    @action(detail=True, methods=["post"])
-    def create_seccion(self, request):
-        serializers = self.get_serializer(data=request.data)
-        if serializers.is_valid():
-            serializers.save()
-            return Response(serializers.data, status=status.HTTP_201_CREATED)
-        return Response(serializers.error, status=status.HTTP_403_FORBIDDEN)
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
 
     
         

@@ -20,14 +20,15 @@ from bushtree.views import *
 from rest_framework.routers import DefaultRouter
 
 router = DefaultRouter()
-router.register(r"seccions", SeccionApiViewSet)
-
-get_user = SeccionApiViewSet.as_view({"get", "list"})
-set_user = SeccionApiViewSet.as_view({"post": "crate_seccion"})
+router.register(r"flowers", FlowerApiViewSet)
+router.register(r"seccions", SeccionsApiViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('seccions/get', get_user),
-    path('seccions/create', set_user),
-    path('api/v1/', include(router.urls))
+    path('api/v1/', include(router.urls)),
+    path('api/v1/createflowers', FlowerApiViewSet.as_view({'post': 'create'})),
+    path('api/v1/flowers/list', FlowerApiViewSet.as_view({'get': 'list'})),
+    path('api/v1/seccions/list', SeccionsApiViewSet.as_view({'get': 'list'})),
+    path('api/v1/createseccion', SeccionsApiViewSet.as_view({'post': 'create'}))
+    
 ]

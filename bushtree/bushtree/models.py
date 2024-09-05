@@ -24,8 +24,8 @@ class Flowers(models.Model):
     color_leaves_name = models.CharField(max_length=20)
     color_leaves_hex = models.CharField(max_length=8)
 
-class Garden(mongo_models.Model):
-    """Получение картинок по названию цветка в MongoDB"""
+class Garden(models.Model):
+    """Получить значение изображений в media"""
     name = mongo_models.CharField(max_length=100)
     image = mongo_models.ImageField(upload_to='images/', height_field=None, width_field=None, max_length=None)
 
