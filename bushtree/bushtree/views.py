@@ -6,7 +6,6 @@ from rest_framework.decorators import action
 from bushtree.serializers import *
 from bushtree.models import *
 from bushtree.mixin import *
-import array
 
 class FlowerApiViewSet(viewsets.ModelViewSet):
     
