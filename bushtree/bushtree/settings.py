@@ -35,6 +35,23 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.7
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
+    'http://localhost:8080',
+    'http://localhost:80',
+    'http://127.0.0.1:8080',
+    'http://localhost',
+    'https://127.0.0.1'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:3000',
+    'http://localhost:8080',
+    'http://localhost:80',
+    'http://127.0.0.1:8080',
+    'http://localhost',
+    'https://127.0.0.1'
+]
 
 # Application definition
 
