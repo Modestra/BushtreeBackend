@@ -3,6 +3,18 @@ networks:
   backend:
     driver: bridge
 services:
+  jupiter-notebooks:
+    container_name: notebooks
+    image: jupyter/datascience-notebook:latest
+    env_file: ./bushtree/.env
+    ports:
+      - 8888:8888
+    networks:
+      - backend
+    volumes:
+      - ./Documents/bushtree:/home/notebooks/work
+    depends_on:
+      - app
   app:
     container_name: backend
     env_file: ./bushtree/.env
@@ -15,6 +27,7 @@ services:
       - backend
     depends_on:
       - postgress
+      - mongodb
     volumes:
       - ./scripts:/scripts
   postgress:

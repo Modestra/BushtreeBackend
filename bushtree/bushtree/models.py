@@ -29,3 +29,4 @@ class Garden(models.Model):
     name = mongo_models.CharField(max_length=100)
     image = mongo_models.ImageField(upload_to='images/', height_field=None, width_field=None, max_length=None)
 
+
