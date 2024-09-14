@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from bushtree.views import *
+from django.conf import settings
 from rest_framework import permissions
 from rest_framework.routers import DefaultRouter
 from drf_yasg.views import get_schema_view
