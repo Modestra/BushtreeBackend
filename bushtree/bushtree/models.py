@@ -1,6 +1,5 @@
 import uuid
 from django.db import models 
-from djongo import models as mongo_models
 
 class Seccion(models.Model):
     id = models.AutoField(primary_key=True)
@@ -25,8 +24,7 @@ class Flowers(models.Model):
     color_leaves_hex = models.CharField(max_length=8)
 
 class Garden(models.Model):
-    """Получить значение изображений в media"""
-    name = mongo_models.CharField(max_length=100)
-    image = mongo_models.ImageField(upload_to='images/', height_field=None, width_field=None, max_length=None)
-
+    """Получить значение изображений в media из S3 хранилища"""
+    image = models.ImageField(upload_to="media/")
+    url = models.URLField(blank=True)
 

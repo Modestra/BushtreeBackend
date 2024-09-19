@@ -2,3 +2,4 @@
 mongoDB
 **/static
 **/media
+**/__pycache__
