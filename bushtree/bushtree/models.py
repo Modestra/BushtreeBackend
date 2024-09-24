@@ -25,6 +25,7 @@ class Flowers(models.Model):
 
 class Garden(models.Model):
     """Получить значение изображений в media из S3 хранилища"""
-    image = models.ImageField(upload_to="media/")
-    url = models.URLField(blank=True)
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255)
+    images = models.BinaryField()
 
