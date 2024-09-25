@@ -46,9 +46,9 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
-    path('api/v1/createflowers', FlowerApiViewSet.as_view({'post': 'create'})),
-    path('api/v1/flowers/list', FlowerApiViewSet.as_view({'get': 'list'})),
-    path('api/v1/seccions/list', SeccionsApiViewSet.as_view({'get': 'list'})),
-    path('api/v1/createseccion', SeccionsApiViewSet.as_view({'post': 'create'}))
+    path('flowers/createflowers', FlowerApiViewSet.as_view({'post': 'create'})),
+    path('flowers/list', FlowerApiViewSet.as_view({'get': 'list'})),
+    path('seccions/list', SeccionsApiViewSet.as_view({'get': 'list'})),
+    path('seccions/createseccion', SeccionsApiViewSet.as_view({'post': 'create'}))
     
 ]

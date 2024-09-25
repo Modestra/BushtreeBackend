@@ -6,6 +6,9 @@ from rest_framework.decorators import action
 from bushtree.serializers import *
 from bushtree.models import *
 from bushtree.mixin import *
+import nbconvert, nbformat, requests, codecs
+from django.conf import settings
+from bushtree.dataset import dataset_creategarden
 
 class FlowerApiViewSet(viewsets.ModelViewSet):
     
@@ -13,10 +16,13 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
     serializer_class = FlowerSerializer
 
     def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
+        json_data = dataset_creategarden()
+        return Response({"data": json_data}, status=status.HTTP_200_OK)
     
     def create(self, request, *args, **kwargs):
-        return super().create(request, *args, **kwargs)
+        json_data = dataset_creategarden()
+        return Response({"data": json_data}, status=status.HTTP_200_OK)
+    
 
 class SeccionsApiViewSet(viewsets.ModelViewSet):
 
