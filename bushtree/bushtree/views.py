@@ -17,11 +17,11 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
 
     def list(self, request, *args, **kwargs):
         json_data = dataset_creategarden()
-        return Response({"data": json_data}, status=status.HTTP_200_OK)
+        return Response({"gardens": json_data[0], "near_gardens": json_data[1]}, status=status.HTTP_200_OK)
     
     def create(self, request, *args, **kwargs):
         json_data = dataset_creategarden()
-        return Response({"data": json_data}, status=status.HTTP_200_OK)
+        return Response({"gardens": json_data}, status=status.HTTP_200_OK)
     
 
 class SeccionsApiViewSet(viewsets.ModelViewSet):
