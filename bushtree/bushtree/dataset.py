@@ -119,12 +119,12 @@ class FlowersSet():
         #Пользователь выбирает из 3 вариантов и генерирует подходящие цветы для этих вариантов.
         flowers_from_main_data = main_data[['flower_beds', 'decorative_terms_start', 'decorative_terms_end', 'height_from', 'height_to', 'color_main', 'color_other', 'cloud_number']]
         flowers_from_main_data_coded = flowers_from_main_data.drop(['cloud_number'], axis=1)
-        print(main_data['color_other'])
-        print(flower_beds_num[::-1])
+        #print(main_data['color_other'])
+        #print(flower_beds_num[::-1])
         for i in flower_beds_num[::-1]:
-            print(f'Для цветника № {int(i)}:')
+            #print(f'Для цветника № {int(i)}:')
             for j in range(len(flowers_from_main_data[flowers_from_main_data['flower_beds'] == int(i)])):
-                print(f'Для облака {j+1} наиболее близкие цветы:')
+                #print(f'Для облака {j+1} наиболее близкие цветы:')
                 color_main = flowers_from_main_data[flowers_from_main_data['flower_beds'] == int(i)]['color_main'].values[j]
                 color_other = flowers_from_main_data[flowers_from_main_data['flower_beds'] == int(i)]['color_other'].values[j] # Получение основного и второстепенного цвета цветка
                 temp_data = data_flowers[(data_flowers.color_main == color_main) & (data_flowers.color_other == color_other)] #формирование временной таблицы цветов из бд отфильтрованная по цвету
@@ -144,7 +144,7 @@ class FlowersSet():
 
                 for k in temp_data.iloc[neigh_temp.predict_proba(flower).argsort(axis=1)[:,:-4:-1][0]]['id']:
                     flowers_list.append(df[df['id'] == k]['name'].values[0])
-                    print('-', df[df['id'] == k]['name'].values[0]) # Массив, который необходимо передать
+                    #print('-', df[df['id'] == k]['name'].values[0]) # Массив, который необходимо передать
             break
         return flowers_list
         # In[35]:
