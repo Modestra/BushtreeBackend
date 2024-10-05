@@ -5,5 +5,18 @@ class FlowerSerializer(serializers.ModelSerializer):
     """Форма для запроса необходимого цветника"""
     class Meta:
         model = Flowers
-        field = ["name", "description", "frozen_resistance", "sunlight", "period_blossom_start", 
-                 "period_blossom_end", "height", "color_bloss_name", "color_bloss_hex", "color_leaves_name", "color_leaves_hex"]
+        fields = '__all__'
+
+class SeccionSerializer(serializers.ModelSerializer):
+    """Форма для получения данных сессии"""
+    
+    class Meta:
+        model = Seccion
+        fields = "__all__"
+
+class GardenSerializer(serializers.ModelSerializer):
+    """Форма для получения данных по цветам/цветникам"""
+    
+    class Meta:
+        model = Gardens
+        fields = "__all__"

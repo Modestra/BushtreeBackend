@@ -16,6 +16,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_SITE_URL = os.getenv('DEFAULT_SITE_URL', default='localhost:8000')
+
 DATABASE = os.getenv('DATABASE', default='sqlite')
 
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
@@ -32,6 +33,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181']
 
+CORS_ALLOW_ALL_ORIGINS = True
 
 # Application definition
 
@@ -44,7 +46,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.postgres',
     'bushtree',
-    'rest_framework'
+    'drf_yasg',
+    'pkg_resources',
+    'rest_framework',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -55,7 +60,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.AllowAny',
+    ]
+}
 
 ROOT_URLCONF = 'bushtree.urls'
 
@@ -86,6 +103,17 @@ if DATABASE == 'sqlite':
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
             'NAME': BASE_DIR / 'db.sqlite3',
+        },
+        "nonrel": {
+            "ENGINE": "djongo",
+            "NAME": os.getenv('MONGO_DB_NAME'),
+            "CLIENT": {
+                "host": os.getenv('MONGO_DB_HOST'),
+                "port": os.getenv('MONGO_DB_PORT'),
+            },
+            'TEST': {
+                'MIRROR': 'default',
+            },
         }
     }
 elif DATABASE == 'postgres':
@@ -97,9 +125,37 @@ elif DATABASE == 'postgres':
             'PASSWORD': os.getenv('POSTGRES_PASSWORD', 'django'),
             'HOST': os.getenv('DB_HOST', 'django'),
             'POST': os.getenv('DB_PORT', 'django'),
+        },
+        "nonrel": {
+            "ENGINE": "djongo",
+            "NAME": os.getenv('MONGO_DB_NAME'),
+            "CLIENT": {
+                "host": os.getenv('MONGO_DB_HOST'),
+                "username": os.getenv('MONGO_DB_USERNAME'),
+                "password": os.getenv('MONGO_DB_PASSWORD'),
+            },
+            'TEST': {
+                'MIRROR': 'default',
+            },
         }
     }
 
+#S3 Storage
+#Интеграция S3 хранилища
+
+STATIC_BUCKET_NAME = os.getenv('STATIC_BUCKET_NAME')
+MEDIA_BUCKET_NAME = os.getenv('MEDIA_BUCKET_NAME')
+DATABASE_BUCKET_NAME = os.getenv('DATABASE_BUCKET_NAME')
+
+USE_S3 = int(os.getenv('USE_S3', default=1))
+if USE_S3:
+    AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
+    AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+    AWS_S3_ENDPOINT_URL = os.getenv('AWS_S3_ENDPOINT_URL')
+    AWS_S3_USE_SSL = int(os.getenv('AWS_S3_USE_SSL', default=1))
+    AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
+    STATIC_URL = f'{AWS_S3_ENDPOINT_URL}/{STATIC_BUCKET_NAME}/'
+    #AWS_S3_REGION_NAME = os.getenv('AWS_S3_REGION_NAME')
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -136,6 +192,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / STATIC_URL
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = BASE_DIR / MEDIA_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

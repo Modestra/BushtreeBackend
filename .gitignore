@@ -1,2 +1,5 @@
 .venv
 mongoDB
+**/static
+**/media
+**/__pycache__

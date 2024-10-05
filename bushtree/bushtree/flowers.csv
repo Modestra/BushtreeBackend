@@ -1,0 +1,282 @@
+flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,height_to,color_main,color_other,frost_resistance_zone,watering,pruning,link,cloud_number
+1,Вербена буэнос-айресская,6,9,солнце,180,180,фиолетовый,,7,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153952879428763691.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+1,Вероника длиннолистная,6,9,солнце,60,120,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153404515184279580.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+1,Синеголовник плосколистный,6,7,солнце,75,75,синий,зеленый,5,засухоустойчивый,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/347134899144523776.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+1,Синеголовник плосколистный,6,7,солнце,75,75,синий,зеленый,5,засухоустойчивый,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/347134899144523776.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+1,Флокс раскидистый,6,9,солнце,5,20,фиолетовый,белый,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153679264242204701.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+1,Молиния тростниковая,8,10,солнце,61,120,желтый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/347111710616092672.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+2,Можжевельник горизонтальный,5,8,солнце,10,30,зеленый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152488201091547137.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+2,Овсяница красная,6,7,солнце,30,70,зеленый,,4,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153778881713668126.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+2,Овсяница калифорнийская,5,6,солнце,46,140,зеленый,,7,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154125133387137031.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+2,Полынь Людовика,6,7,солнце,33,100,белый,зеленый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153874191332933652.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+2,Ясколка альпийская,5,6,солнце,5,20,белый,,1,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153405696300285974.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+2,Астра вересковая,8,10,солнце,30,91,белый,желтый,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153399533022216219.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+2,Очиток обыкновенный,6,7,солнце,20,100,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154202438503497729.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+3,Щучка дернистая (Луговник),6,11,солнце,40,120,желтый,,5,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/347111710616092672.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+3,Монарда двойчатая,7,9,солнце,70,150,красный,розовый,6,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153853751583571989.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+3,Флокс Natural Feelings,6,9,солнце,80,80,фиолетовый,,5,умеренный полив,0,https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReWHyUNLyq7psmZtrP2sPjmQNNVIAGcBeWlrwE4zg0q2A8u7uv,3
+3,Очиток видный Brilliant,8,11,солнце,30,50,розовый,фиолетовый,5,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153421738003136534.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+4,Луговик дернистый,6,9,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+4,Котовник фассена,6,9,солнце,30,61,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153785023516901398.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+4,Лилейник желтый,6,9,солнце,50,100,желтый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154056826227261475.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+5,Лук скорода,6,6,солнце,30,50,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153419942706806832.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+5,Шалфей дубравный,6,9,солнце,45,60,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154129638807830536.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+5,Овсяница калифорнийская,5,6,солнце,46,140,зеленый,,7,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154125133387137031.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+5,Герань лесная,7,9,солнце,75,75,фиолетовый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153788021404073986.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+6,Волжанка обыкновенная,6,6,солнце,120,180,белый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/201227391142592512.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+6,Луговик дернистый,6,9,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+6,Эхинацея пурпурная,7,9,солнце,30,150,розовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430463846187010.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+6,Сеслерия голубая,5,6,солнце,10,50,зеленый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153959403484086289.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+6,Очиток видный,8,11,солнце,30,70,розовый,фиолетовый,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152627637204811777.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+6,Вербейник обыкновенный,6,7,солнце,50,150,желтый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154057994458365977.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+7,Астра вересковая,8,10,солнце,30,91,белый,желтый,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153399533022216219.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+7,Маклея,6,9,солнце,150,200,зеленый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153669454536900636.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+7,Гелениум,7,9,солнце,30,120,желтый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152563796810924036.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+7,Полынь Людовика,6,7,солнце,33,100,зеленый,белый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153874191332933652.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+7,Ясколка войлочная,5,9,солнце,15,45,белый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152563796810924036.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+7,Лилейник желтый,6,9,солнце,50,100,желтый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154056826227261475.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+7,Анафалис жемчужный,7,9,солнце,30,100,белый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153745574242287642.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+7,Кореопсис ланцетовидный,7,9,солнце,10,70,желтый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154110710886957068.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",8
+8,Овсяница калифорнийская,5,6,солнце,46,140,зеленый,,7,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154125133387137031.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+8,Шалфей дубравный,6,9,солнце,45,60,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154129638807830536.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+8,Герань лесная,7,9,солнце,75,75,фиолетовый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153788021404073986.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+8,Синеголовник плосколистный,6,7,солнце,75,75,синий,зеленый,5,засухоустойчивый,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/347134899144523776.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+8,Ломонос цельнолистный,5,9,солнце,30,91,фиолетовый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/351932394794090496.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+8,Вероникаструм,7,9,солнце,150,200,фиолетовый,,3,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/217194876960440320.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+8,Горечавка ваточник,7,9,солнце,15,20,синий,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153723339196596235.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+9,Посконник пятнистый Album,7,8,солнце,180,200,белый,,4,умеренный полив,1,https://5plusroses.ru/images/catalog/3248b7a62cb50111e061f0d75b58d836.jpg,1
+9,Вейник Карл Форестер,5,9,солнце,150,200,зеленый,желтый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153441009521393702.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+9,Achillea millefolium 'Terracotta',6,9,солнце,50,80,оранжевый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153935128328929324.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+9,Солидастер,7,9,солнце,50,70,желтый,,7,умеренный полив,1,https://cdn.garshinka.ru/styles/product_photos_big/public/product-photos/255240/1700162199.8262-2020851-C9FFFEE1-20E0-48BF-B5D3-9F6B05E1FA58.jpeg.jpg,4
+9,Кровохлебка,7,9,солнце,150,200,красный,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/352289431130439680.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+9,Кровохлебка тупая,6,8,солнце,70,100,белый,,4,умеренный полив,1,https://dachadacha.com/images/12-06-2020/krovokhlebkatupayaalba.jpg,6
+9,Тысячелистник обыкновенный,6,9,солнце,30,100,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154244786881036288.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+9,Нивяник обыкновенный,7,8,солнце,15,80,белый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154193608050737182.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",8
+9,Гелениум,7,9,солнце,30,120,желтый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152563796810924036.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",9
+9,Овсяница калифорнийская,5,6,солнце,46,140,зеленый,,7,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154125133387137031.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",10
+9,Лук скорода,6,6,солнце,30,50,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153419942706806832.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",11
+10,Вейник Карл Форестер,5,9,солнце,150,200,зеленый,желтый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153441009521393702.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+10,Физостегия виргинская,7,8,солнце,60,80,белый,,2,умеренный полив,1,https://blog-travushka.ru/wp-content/uploads/2022/04/0310%D0%BF-e1649071203841.jpg,2
+10,Райграс бульбоносный,5,6,солнце,30,46,зеленый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152516221458186240.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+10,Астильба Арендса,7,8,солнце,50,100,белый,,8,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153816260814045215.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+10,Бадан толстолистный,5,6,солнце,15,30,фиолетовый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152570887801929731.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+10,Вальдштейния тройчатая,5,,солнце,8,15,желтый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/370026271673581568.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+11,Флокс метельчатый,6,9,солнце,30,150,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154155636244873243.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+11,Очиток (седум) Стардаст,8,9,солнце,40,60,белый,розовый,4,умеренный полив,1,https://www.garshinka.ru/tovar/sedum-stardust,2
+11,Чистец (Сильвер Карпет),8,10,солнце,15,20,зеленый,,3,умеренный полив,1,https://www.garshinka.ru/tovar/stahis-chistec-silver-carpetsilver-karpet,3
+11,"Астильба ""Younique Salmon""",7,8,полутень,40,40,розовый,,4,влаголюбивые,1,https://terra29.ru/products/astilba-younique-salmon,4
+11,Гейхера,5,11,солнце,15,20,красный,розовый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154026314779590686.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+12,Мискантус,6,9,солнце,80,200,зеленый,,3,влаголюбивые,нет,https://www.florini.ru/wp-content/uploads/2016/01/Miscanthus-Gracillimus.jpg,1
+12,Горец изменчивый,7,9,солнце,100,150,белый,,3,умеренный полив,1,https://gardenlady.com/wp-content/uploads/giant-fleece-flower-768x1024.png,2
+12,Астра новобельгийская,8,11,солнце,95,95,белый,,3,умеренный полив,0,https://agro-ra.ru/1900-medium_astranovobelgiiskajauaitlediwhiteladiesjpg/astra-novo-belgiiskaja-uait-ledi-white-ladies.jpg,3
+12,Флокс метельчатый,6,9,солнце,30,150,розовый,,4,умеренный полив,1,https://sad-express24.ru/image/cache/catalog/tovar-images/i/gd/cl/53989890a6bf176a1fe884cb72ea3573-1000x1000.jpg,4
+12,Дербенник иволистный,6,9,солнце,80,140,фиолетовый,,3,влаголюбивые,1,https://zelenaya-dolina66.ru/assets/images/products/445/big/derbennik-ivolistnyij.jpg,5
+12,Луговик дернистый,6,9,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+12,Астранция крупная,6,7,солнце,70,90,красный,,4,умеренный полив,1,https://alexsad.ru/upload/iblock/aa5/b44wyh3l3xf78q1o41elw3qblan4ky6m.JPG,7
+12,Вероника длиннолистная Роял Пинк,6,9,солнце,45,45,розовый,,4,умеренный полив,1,https://azbuka-sada96.ru/wp-content/uploads/2023/07/veronika-dlinnolistnaya-pink-shades.jpg,8
+12,Сеслерия голубая,5,6,солнце,10,50,зеленый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153959403484086289.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",9
+12,"Герань кантабрийская ""Biokovo""",6,7,полутень,30,50,белый,розовый,4,умеренный полив,0,https://terra29.ru/products/geran-kantabriyskaya-biokovo,10
+14,"Гортензия метельчатая ""Vanille Fraise""",7,9,солнце,150,200,розовый,белый,4,влаголюбивые,1,https://terra29.ru/products/gortenziya-metelchataya-vanille-fraise,1
+14,Дербенник иволистный,6,9,солнце,80,140,фиолетовый,,3,влаголюбивые,1,https://zelenaya-dolina66.ru/assets/images/products/445/big/derbennik-ivolistnyij.jpg,2
+14,Шалфей (сальвия) дубравный Остфрисланд,6,8,солнце,40,80,фиолетовый,,4,умеренный полив,1,https://www.garshinka.ru/product/salvia-nemorosa-ostfriesland,3
+14,Герань ,6,9,солнце,30,40,розовый,,4,умеренный полив,0,https://rassadacvetov.com/wp-content/uploads/2020/04/Pelargoniya-zonalnaya-rozovaya.jpg,4
+14,Роза канадская,6,9,полутень,50,120,розовый,,3,умеренный полив,1,https://moi-rastenia.ru/wp-content/uploads/2021/10/kanadskaya-roza-Prayri-Dzhoy-1.jpg,5
+14,Котовник фассена Six Hills Giant,6,9,солнце,50,60,фиолетовый,,3,умеренный полив,0,https://agro-ra.ru/1720-medium_kotovnikfassenasixhillsgiantjpg/kotovnik-fassena-six-hills-giant.jpg,6
+14,Астильба,6,9,полутень,40,45,белый,,4,умеренный полив,1,https://kedrpitomnik.ru/wp-content/uploads/2021/06/%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D0%B1%D0%B0.jpg,7
+16,Котовник фассена Six Hills Giant,6,9,солнце,50,60,фиолетовый,,3,умеренный полив,0,https://agro-ra.ru/1720-medium_kotovnikfassenasixhillsgiantjpg/kotovnik-fassena-six-hills-giant.jpg,1
+16,Эхинацея пурпурная ,7,9,солнце,90,100,розовый,,4,умеренный полив,1,https://terra29.ru/products/ehinaceya-purpurnaya,2
+16,вероника длиннолистная шнееризин,6,9,солнце,70,80,белый,,4,засухоустойчивый,1,https://www.garshinka.ru/product/veronika-dlinnolistnaa-sneerizin,3
+16,Шалфей (сальвия) дубравный Остфрисланд,6,8,солнце,40,80,фиолетовый,,4,умеренный полив,1,https://www.garshinka.ru/product/salvia-nemorosa-ostfriesland,4
+16,Душица Голд НаггетДушица Панта (Origanum Panta),6,9,солнце,15,30,зеленый,желтый,4,засухоустойчивый,1,https://www.garshinka.ru/product/dusica-panta,5
+16,Тысячелистник Вайсес Вандер,7,8,солнце,70,100,белый,,3,засухоустойчивый,1,https://www.garshinka.ru/product/tysyachelistnik-vayses-vander,6
+16,Мята Ginger Mint,6,8,солнце,45,50,зеленый,желтый,3,умеренный полив,1,https://www.garshinka.ru/tovar/myata-ginger-mint,7
+16,Душица Дьябло,7,9,солнце,20,40,розовый,,4,засухоустойчивый,1,https://www.garshinka.ru/product/dushica-dyablo,8
+16,Тимьян обыкновенный Силвер Пози,6,8,солнце,10,20,розовый,,4,засухоустойчивый,1,https://www.garshinka.ru/product/timyan-obyknovennyy-silver-pozi,9
+16,Тимьян обыкновенный ,6,8,солнце,25,40,белый,,4,засухоустойчивый,1,https://www.garshinka.ru/tovar/timyan-obyknovennyy,10
+17,"Гортензия метельчатая ""Little Lime""",7,9,солнце,90,90,зеленый,желтый,4,влаголюбивые,1,https://terra29.ru/products/gortenziya-metelchataya-little-lime,1
+17,Молиния Морхекс голубая,8,9,солнце,70,90,коричневый,,4,умеренный полив,0,https://www.garshinka.ru/product/molinia-caerulea-moorhexe,2
+17,Астранция Сноу Стар,6,9,солнце,60,60,белый,,4,умеренный полив,1,https://www.garshinka.ru/product/astranciya-snou-star,3
+17,"Вероникаструм ""Diana""",7,8,солнце,130,150,белый,,4,умеренный полив,1,https://terra29.ru/products/veronikastrum-diana,4
+17,Нарцисс Эрличир мини,5,8,солнце,25,30,белый,,3,умеренный полив,0,https://www.garshinka.ru/tovar/narciss-mini-erlicheer-5sht,5
+17,Вероника Айсикл,6,8,солнце,60,60,белый,,4,умеренный полив,1,https://www.garshinka.ru/product/veronika-aysikl,6
+17,Астранция Альба,6,8,солнце,30,60,белый,,4,умеренный полив,1,https://www.garshinka.ru/produkt/astranciya-major-alba,7
+17,Эхинацея пурпурная Аляска,7,9,солнце,60,60,белый,,4,умеренный полив,1,https://www.garshinka.ru/product/ehinacea-purpurnaa-alaska,8
+17,Котовник фассена Six Hills Giant,6,9,солнце,50,60,фиолетовый,,3,умеренный полив,0,https://agro-ra.ru/1720-medium_kotovnikfassenasixhillsgiantjpg/kotovnik-fassena-six-hills-giant.jpg,9
+17,Лук декоративный Нигрум,5,8,солнце,50,75,белый,,4,умеренный полив,0,https://www.garshinka.ru/product/luk-dekorativnyy-nigrum-20-sht,10
+17,Морозник махровый Эллен Вайт,7,8,полутень,40,40,белый,,4,умеренный полив,1,https://www.garshinka.ru/tovar/moroznik-double-ellen-white,12
+18,Дельфиниум Блюберри Пай (Черничный пирог),6,9,солнце,80,110,синий,фиолетовый,3,влаголюбивые,1,https://www.garshinka.ru/tovar/delfinium-blueberry-pie,1
+18,Страусник обыкновенный (папоротник),5,9,полутень,50,160,зеленый,,4,умеренный полив,1,https://www.garshinka.ru/product/strausnik-obyknovennyi-paporotnik,2
+18,"Ирис сибирский ""Peacock Butterfly Drink Your Tea""",6,6,солнце,70,80,фиолетовый,,3,умеренный полив,1,https://terra29.ru/products/iris-sibirskiy-peacock-butterfly-drink-your-tea,3
+18,"Хоста ""Abiqua Drinking Gourd""",5,9,полутень,45,60,зеленый,,3,влаголюбивые,1,https://terra29.ru/products/hosta-abiqua-drinking-gourd,4
+18,Тимьян ползучий Пинк Чинтз,5,7,солнце,10,15,фиолетовый,,4,засухоустойчивый,1,https://www.garshinka.ru/product/timyan-polzuchiy-pink-chintz,5
+19,"Вероникаструм ""Fascination""",8,8,солнце,160,160,фиолетовый,,4,умеренный полив,1,https://terra29.ru/products/veronikastrum-fascination,1
+19,Луговик дернистый,6,9,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+19,Астранция крупная,6,7,солнце,70,90,красный,,4,умеренный полив,1,https://alexsad.ru/upload/iblock/aa5/b44wyh3l3xf78q1o41elw3qblan4ky6m.JPG,3
+19,"Астильба ""Burgundy Red""",7,8,полутень,60,60,красный,,4,влаголюбивые,1,https://terra29.ru/products/astilba-burgundy-red,4
+19,"Астильба ""Younique Salmon""",7,8,полутень,40,40,розовый,,4,влаголюбивые,1,https://terra29.ru/products/astilba-younique-salmon,5
+19,Очиток (седум) видный Осенняя радость,8,10,солнце,30,60,красный,розовый,4,засухоустойчивые,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152627637204811777.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+20,Папоротник щитовник мужской,5,11,полутень,100,100,зеленый,,4,умеренный полив,1,https://www.garshinka.ru/produkt/shchitovnik-paporotnik-filix-mas,1
+20,"Хоста ""Patriot""",7,9,полутень,40,45,зеленый,белый,3,влаголюбивые,1,https://terra29.ru/products/hosta-patriot,2
+20,"Бадан ""Abendglut""",5,6,полутень,25,30,розовый,красный,3,умеренный полив,1,https://terra29.ru/products/badan-abendglut,3
+20,"Хоста ""Halcyon""",7,7,тень,50,50,синий,,3,влаголюбивые,1,https://terra29.ru/products/hosta-halcyon,4
+20,"Примула ушковая ""Bartl""",4,9,полутень,20,25,фиолетовый,белый,4,умеренный полив,0,https://terra29.ru/products/primula-ushkovaya-bartl,5
+20,"Хоста ""Colored Hulk""",7,7,тень,35,35,зеленый,желтый,3,влаголюбивые,1,https://terra29.ru/products/hosta-colored-hulk,7
+21,"Роза канадская ""Morden Blush""",6,10,солнце,75,150,розовый,,4,умеренный полив,1,https://terra29.ru/products/roza-kanadskaya-morden-blush,1
+21,"Пион ""Mary E. Nicholls"" ",6,6,солнце,80,80,белый,розовый,4,влаголюбивые,1,https://terra29.ru/products/pion-mary-e-nicholls,2
+21,Эхинацея пурпурная Аляска,7,9,солнце,60,60,белый,,4,умеренный полив,1,https://www.garshinka.ru/product/ehinacea-purpurnaa-alaska,3
+21,"Ирис сибирский ""Peacock Butterfly Drink Your Tea""",6,6,солнце,70,80,фиолетовый,,3,умеренный полив,1,https://terra29.ru/products/iris-sibirskiy-peacock-butterfly-drink-your-tea,4
+21,Шалфей (сальвия) дубравный Остфрисланд,6,8,солнце,40,80,фиолетовый,,4,умеренный полив,1,https://www.garshinka.ru/product/salvia-nemorosa-ostfriesland,5
+21,Лук декоративный Атропурпуреум,5,6,солнце,40,70,красный,,4,умеренный полив,0,https://www.garshinka.ru/tovar/luk-dekorativnyy-atropurpureum-8sht,6
+21,Чистец (Сильвер Карпет),8,10,солнце,15,20,зеленый,,3,умеренный полив,1,https://www.garshinka.ru/tovar/stahis-chistec-silver-carpetsilver-karpet,7
+22,Гиления,6,8,солнце,60,120,белый,розовый,4,умеренный полив,нет,https://alexsad.ru/upload/iblock/cf1/cf1b1095a506622303b575ddc9c168e6.JPG,1
+22,Дельфиниум,6,7,солнце,70,130,белый,,4,умеренный полив,нет,https://7semyan.ru/upload/iblock/de9/1v7a2ww93d5hfrdfm2ml6yvih2gz182s.jpeg.webp,2
+22,Ясколка биберштейна,4,5,солнце,10,15,белый,белый,4,умеренный полив,нет,https://www.zlatakrona.com/upload/iblock/461/461aa65f4e9c979c1e6d83163115f012.jpg,3
+22,"Роза флорибунда
+",7,10,солнце,80,100,розовый,,4,умеренный полив,нет,https://www.pervocvet-shop.ru/img/work/nomencl/5207.jpg,4
+23,Роза канадская,6,9,полутень,50,120,розовый,,3,умеренный полив,да,https://moi-rastenia.ru/wp-content/uploads/2021/10/kanadskaya-roza-Prayri-Dzhoy-1.jpg,1
+23,Гортензия древовидная Annabelle,6,9,полутень,150,180,белый,,4,умеренный полив,да,https://tyumen.zpitomnik.ru/upload/resize_cache/webp/iblock/a0a/qptsyccfiwf9ungr1oyzagszmkjimpr2.webp,2
+23,Астильба,6,9,полутень,40,45,белый,,4,умеренный полив,да,https://kedrpitomnik.ru/wp-content/uploads/2021/06/%D0%B0%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D0%B1%D0%B0.jpg,3
+23,Туя западная Globosa,5,9,полутень,60,100,зеленый,,3,умеренный полив,да,https://greensad36.ru/image/cache/catalog/conifers/thuja/thuja-occidentalis-globosa-650x650.jpg,4
+23,Барбарис тунберга Green carpet,5,9,полутень,100,150,зеленый,,4,умеренный полив,да,https://www.drevo-spas.ru/img/work/nomencl/a_189_1686.JPG,5
+23,Сосна горная Benjamin,5,9,полутень,60,70,зеленый,,4,умеренный полив,да,https://gardens.ru/img/work/nomencl/119654.jpg,6
+24,Мискантус,6,9,солнце,80,200,зеленый,,3,влаголюбивые,нет,https://www.florini.ru/wp-content/uploads/2016/01/Miscanthus-Gracillimus.jpg,1
+24,Гортензия,7,8,солнце,100,150,белый,,4,влаголюбивые,да,https://www.uzhniy.ru/upload/webp/resize_cache/a54/370_0_1/hydrangea-arborescens-annabelle-2.webp,2
+24,Мордовник,7,8,солнце,70,100,синий,,3,влаголюбивые,да,https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTVKjUO6qeKMNgB0fDOiP7CWAvROVah6a5lOsxhb82AJS-19rMmUFjbIpPijTAmO7S4u62EqmeD2o3-V1Q,3
+24,Синеголовник,6,7,солнце,80,100,синий,,4,влаголюбивые,нет,https://rastenia-biolit.ru/d/sinegolovnik_eringium.jpg,4
+24,Шалфей дубравный,6,8,солнце,60,70,фиолетовый,,4,влаголюбивые,да,https://www.leskovo-pitomnik.ru/img/work/nomencl/4096.JPG,5
+27,Молиния Хайдебраут,5,9,солнце,90,120,зеленый,желтый,4,умеренный полив,нет,https://www.uzhniy.ru/upload/webp/resize_cache/0a0/ygft8ae2t8543ksfvv2adqdmbwx5befq/370_0_1/69500374_42f6_11e3_a24c_50465da3695e_1.webp,1
+27,Вероникаструм Лавендер тауэр,7,9,солнце,120,150,фиолетовый,,4,умеренный полив,нет,https://ua-garden.com/home/catalog_products/item_10058/gallery/veronikastrum-virginskijj-fascination-06-lr-copyright.jpg,2
+27,Вейник Карл Форестер,5,9,солнце,120,200,зеленый,желтый,4,умеренный полив,нет,https://flowerstrees.ru/image/cache/catalog/Mnogoletniki/calamagrostisKarlFoerster1-500x500.jpg,3
+27,Физостегия виргинская,7,9,солнце,70,80,белый,,4,умеренный полив,нет,https://blog-travushka.ru/wp-content/uploads/2022/04/0310%D0%BF-e1649071203841.jpg,4
+27,Шалфей дубравный,6,8,солнце,40,80,фиолетовый,,4,умеренный полив,нет,https://www.leskovo-pitomnik.ru/img/work/nomencl/4096.JPG,5
+27,Анафалис жемчужный,7,9,солнце,30,60,белый,,4,умеренный полив,нет,https://avatars.dzeninfra.ru/get-zen_doc/3518390/pub_5f9a5ae590370858214c21a8_5f9a86a40e34a96ab3bb79cb/scale_1200,6
+27,Эхинацея Вайт свон,7,9,солнце,60,80,белый,,4,умеренный полив,нет,https://agro-ra.ru/1946-medium_echinaceapurpwhiteswanjpg/yehinaceja-purpurnaja-vait-svon-white-swan.jpg,7
+28,Мискантус китайский Morning Light,8,9,солнце,100,150,зеленый,,5,засухоустойчивые,да,https://leafgarden.ru/wp-content/uploads/2021/04/miska-3.jpg,1
+28,Перовския,7,9,солнце,60,100,фиолетовый,,5,засухоустойчивые,да,https://astrussia.com/image/cache/catalog/image/cache/catalog/product/g-katalog-11042200-700x700.webp,2
+28,Гаура линдхеймера,7,9,солнце,60,120,белый,,5,засухоустойчивые,да,https://www.green-ekb.ru/upload/iblock/894/z2is740q4agmopn3lplypg34omf14ex3.jpeg,3
+28,Мак восточный,5,5,солнце,60,100,красный,,5,засухоустойчивые,да,https://centrosad.ru/1604-medium_0makvostochnyipapaverorientalejpg/mak-vostochnyi-papaver-orientale.jpg,4
+28,Эхинацея пурпурная,7,9,солнце,60,90,розовый,красный,5,засухоустойчивые,да,https://upload.wikimedia.org/wikipedia/commons/8/80/CH_Echinacea_purpurea.jpg,5
+28,Овсяница валисская,5,6,солнце,40,40,зеленый,голубой,5,засухоустойчивые,да,https://vsesorta.ru/upload/iblock/a18/737500i-ovsyanitsa-valisskaya-glaucantha.jpg,6
+29,Мискантус китайский,8,11,солнце,80,200,зеленый,,3,умеренный полив,нет,https://upackunion.ru/wp-content/uploads/2024/02/img_9920.jpg,1
+29,Астра новобельгийская Marie Ballard,8,11,солнце,95,95,фиолетовый,,3,умеренный полив,нет,https://dolina-sad.ru/upload/resize_cache/webp/iblock/954/grylexx8r162tcshs6nb3eorhacty8d5.webp,2
+29,Герань крупнокорневищная Bevan’s Variety,6,7,солнце,30,30,розовый,,3,умеренный полив,нет,https://shop.plantship.ru/wp-content/uploads/2021/11/geranium-macrorrhizum-bevans-variety.jpg,3
+30,Аир болотный,6,9,полутень,100,100,зеленый,,4,влаголюбивые,нет,https://cdn.botanichka.ru/wp-content/uploads/2011/11/Acorus-calamus-01.jpg,1
+30,Дербенник иволистный,6,9,полутень,80,140,розовый,,4,влаголюбивые,нет,https://zelenaya-dolina66.ru/assets/images/products/445/big/derbennik-ivolistnyij.jpg,2
+30,Ирис сибирский,6,9,полутень,50,50,фиолетовый,,4,влаголюбивые,нет,https://russia.ru/storage/flowers/a25c1df3309b6def9503b563831f4f97.jpeg,3
+30,Горец змеиный,6,7,полутень,100,100,розовый,,4,влаголюбивые,нет,https://lafa.ru/upload/iblock/080/117220-gorets-zmeinyy-superba.jpg,4
+30,Купальница европейская,5,6,полутень,60,60,желтый,,4,влаголюбивые,нет,https://fermilon.ru/wp-content/uploads/2020/07/7-24-780x464.jpg,5
+30,Незабудка болотная,5,5,полутень,50,50,голубой,,4,влаголюбивые,нет,https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Myosotis_scorpioides2.jpg/1200px-Myosotis_scorpioides2.jpg,6
+31,Молиния,6,10,солнце,40,120,желтый,,4,засухоустойчивые,нет,https://zelenaya-dolina66.ru/assets/images/products/326/big/moliniya-golubaya-heidebraut1.jpg,1
+31,Роза флорибунда,6,10,солнце,90,90,красный,,4,засухоустойчивые,нет,https://www.rozebook.ru/upload/iblock/f81/trgya3yxjy0lwdczmkvsi692xbw9nxb8.png,2
+31,Гейхера,4,10,солнце,15,20,красный,,4,засухоустойчивые,нет,https://img.7dach.ru/image/1200/00/00/48/2018/12/13/544f6864c6-nomark.jpg,3
+31,Ковыль,6,9,солнце,70,100,зеленый,,4,засухоустойчивые,нет,https://ic.pics.livejournal.com/re_gatta/10048853/95704/95704_original.jpg,4
+32,Катран кордифолия,6,8,солнце,120,150,белый,,4,умеренный полив,1,https://avatars.dzeninfra.ru/get-zen_doc/1687249/pub_61d3692b6e19df39ed7bb60c_61d3d877fed71d54e298810c/scale_1200,1
+32,вероника длиннолистная шнееризин,6,9,солнце,70,80,белый,,4,засухоустойчивый,1,https://www.garshinka.ru/product/veronika-dlinnolistnaa-sneerizin,2
+32,Роза почвопокровная,6,9,солнце,70,90,белый,,5,умеренный полив,1,https://gardens.ru/img/work/nomencl/a_113321_10401.jpg,3
+33,Гипсофила метельчатая,7,8,солнце,30,80,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/201212341577187328.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+33,Роза парковая,7,7,солнце,100,120,белый,розовый,4,умеренный полив,1,https://img3.procvetok.com/crop/w800h600/57/e2/57e2b145036d1a62253648208be7164a.jpg,1
+33,Монарда гибридная,7,8,солнце,30,60,розовый,белый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152340372612186112.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+33,Пион ИТО гибрид,5,6,солнце,50,80,розовый,,4,умеренный полив,0,https://binomen.ru/photo/uploads/posts/2024-01/1706687840_binomen-ru-p-pion-rossiya-vkontakte-66.jpg,4
+33,Вероника длиннолистная,6,9,солнце,60,120,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153404515184279580.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+33,"Герань кантабрийская ""Biokovo""",6,7,полутень,30,50,белый,розовый,4,умеренный полив,0,https://terra29.ru/products/geran-kantabriyskaya-biokovo,6
+33,Гейхера,5,9,солнце,15,20,красный,,4,засухоустойчивые,1,https://img.7dach.ru/image/1200/00/00/48/2018/12/13/544f6864c6-nomark.jpg,7
+34,Вейник Карл Форестер,5,9,солнце,150,200,зеленый,желтый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153441009521393702.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+34,Ель обыкновенная,5,11,полутень,30,120,зеленый,,3,умеренный полив,1,https://avatars.dzeninfra.ru/get-zen_doc/1821029/pub_632c904a9ac21014a0ffe565_632c90d8bf3e97575499587f/scale_1200,2
+34,Манжетка,6,10,солнце,30,45,зеленый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/157182900993785861.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+34,Астильба,6,10,полутень,30,40,розовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154206896679550986.jpeg?x-oss-process=image/format,webp&v=1.0",4
+34,Эхинацея пурпурная,7,9,солнце,30,150,розовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430463846187010.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+34,Очиток видный,8,11,солнце,30,70,розовый,фиолетовый,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153421738003136534.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+34,Вербейник ландышевый,6,10,солнце,60,100,белый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153748975856386071.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+34,Герань садовая,6,10,солнце,30,50,фиолетовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153788021404073986.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",8
+34,Шалфей дубравный,6,9,солнце,45,60,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154129638807830536.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",9
+34,Котовник фассена,6,9,солнце,30,61,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153785023516901398.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",10
+35,Лиатрис Альба,7,9,солнце,70,90,белый,,5,умеренный полив,1,https://m.garden76.ru/upload/iblock/cbc/idlzjluc0a3934rvn2qe39i4yzlt2goj.jpg,1
+35,Вероникаструм,7,9,солнце,150,200,фиолетовый,,3,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/217194876960440320.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+35,Флокс метельчатый,6,9,солнце,30,150,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154155636244873243.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+35,Котовник фассена,6,9,солнце,30,61,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153785023516901398.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+35,Вейник остроцветковый,7,9,солнце,100,150,желтый,,5,умеренный полив,1,https://russkie-derevya.ru/wp-content/uploads/2022/02/07._SL1500_.jpg,5
+35,Кровохлебка,7,9,солнце,150,200,красный,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/352289431130439680.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+35,Дербенник иволистный,6,9,полутень,40,80,розовый,,3,умеренный полив,1,https://zelenaya-dolina66.ru/assets/images/products/445/big/derbennik-ivolistnyij.jpg,7
+35,Ирис сибирский,6,9,полутень,50,50,фиолетовый,,4,влаголюбивые,0,https://russia.ru/storage/flowers/a25c1df3309b6def9503b563831f4f97.jpeg,8
+35,Купальница европейская,5,6,полутень,60,60,желтый,,4,влаголюбивые,0,https://fermilon.ru/wp-content/uploads/2020/07/7-24-780x464.jpg,9
+36,Роджерсия перистая Chocolate,7,9,полутень,60,80,красный,розовый,4,умеренный полив,0,https://avatars.dzeninfra.ru/get-zen_doc/1108048/pub_5db5b50d95aa9f00b1069b8f_5dc66e30f2583c491d729b49/scale_1200,1
+36,Астильба White Sensation,7,9,полутень,30,40,белый,,5,умеренный полив,0,https://vladimir.plodovyi.ru/upload/iblock/509/ix0fw3azecdag0k5hjx57ahv13x2sr22.jpg,2
+36,Хоста,5,9,полутень,30,50,зеленый,,3,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154194862181187588.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+36,Анемона лесная,6,6,полутень,30,46,белый,,4,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154503537185783813.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+36,Тиарелла сердцелистная pink skyrocket,5,9,полутень,15,30,розовый,,3,умеренный полив,0,https://kiskinsad.ru/wp-content/uploads/2023/03/pink-skyrocket1.jpg,5
+36,Бруннера,5,9,полутень,20,30,синий,,3,умеренный полив,0,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154088127948914709.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+37,Щучка дернистая,6,7,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+37,"Роза флорибунда
+",7,10,солнце,80,100,розовый,,4,умеренный полив,1,https://www.pervocvet-shop.ru/img/work/nomencl/5207.jpg,2
+37,Гилления трехлистная,7,8,полутень,61,120,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/393494071763533824.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+37,Гипсофила метельчатая,7,8,солнце,30,80,белый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/201212341577187328.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+37,Седум обыкновенный Munstead Dark Red,7,9,солнце,30,40,красный,,4,умеренный полив,1,https://dolina-sad.ru/upload/resize_cache/webp/iblock/963/ls5e0p6e0lakvcpqz3m7h8vucj98h1fn.webp,5
+37,Очиток (седум) видный Осенняя радость,8,10,солнце,30,60,красный,розовый,4,засухоустойчивые,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152627637204811777.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+38,Лилии матрагон,6,9,солнце,70,100,оранжевый,,4,умеренный полив,1,https://idei.club/raznoe/uploads/posts/2022-12/thumbs/1671641937_idei-club-p-martagon-liliya-v-landshaftnom-dizaine-diz-14.jpg,1
+38,Клопогон кистистый,5,9,полутень,120,200,белый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153735343630188575.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+38,Волжанка двудомная,5,9,полутень,120,180,белый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152597512304197635.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+38,Арункус двудомный,5,7,солнце,25,35,белый,,4,умеренный полив,1,https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Aruncus_aethusifolius_GotBot_2015_002.jpg/1200px-Aruncus_aethusifolius_GotBot_2015_002.jpg,4
+38,Дицентра «Валентина»,5,6,солнце,30,75,красный,,4,умеренный полив,1,https://i.pinimg.com/originals/25/20/16/252016f440521043e080ed8ccbbafa51.jpg,5
+39,Аспарагус,8,9,полутень,30,150,зеленый,,3,умеренный полив,1,https://i.pinimg.com/originals/50/17/5a/50175a6efa279148129343dbba84d462.png,1
+39,Лиатрис колосковый альба,7,9,солнце,50,80,белый,,5,умеренный полив,1,https://agronomov.ru/upload/resize_cache/iblock/312/768_854_1145fd49d8a65d18eb8980866091e05f6/3129e36fce572852d2ea833dd3d9f9ae.jpg,2
+39,Флокс метельчатый,6,9,солнце,30,150,фиолетовый,,4,умеренный полив,1,https://semiramisgardens.ru/upload/iblock/9e7/9e7a1dc48e76a89df35b13ed49f8b0a6.jpg,3
+39,Агастахе гибридный,5,9,солнце,60,120,фиолетовый,,4,умеренный полив,1,https://www.semena-tut.ru/components/com_jshopping/files/img_products/full_agastache-vivat-golyboi.jpg,4
+39,Шалфей дубравный,6,9,солнце,45,60,фиолетовый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154129638807830536.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
+39,Эхинацея пурпурная,7,9,солнце,30,40,розовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430463846187010.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+39,Кореопсис ланцетовидный,7,9,солнце,10,70,желтый,,6,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154110710886957068.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",7
+40,Щучка дернистая,6,10,солнце,75,75,желтый,,2,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152430511090827265.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+40,Флокс метельчатый,6,9,солнце,30,150,розовый,,4,умеренный полив,1,https://sad-express24.ru/image/cache/catalog/tovar-images/i/gd/cl/53989890a6bf176a1fe884cb72ea3573-1000x1000.jpg,2
+40,Астранция крупная,6,7,солнце,70,90,красный,,4,умеренный полив,1,https://lotosk.com.ua/image/cache/000001698_3_-1000x1000.jpg,3
+40,Очиток видный,8,11,солнце,30,70,розовый,фиолетовый,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153421738003136534.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+40,Гейхера,5,9,солнце,15,20,красный,,4,засухоустойчивые,1,https://img.7dach.ru/image/1200/00/00/48/2018/12/13/544f6864c6-nomark.jpg,5
+40,Чистец (Сильвер Карпет),8,10,солнце,15,20,зеленый,,3,умеренный полив,1,https://www.garshinka.ru/tovar/stahis-chistec-silver-carpetsilver-karpet,6
+41,Посконник пятнистый,6,9,солнце,180,200,розовый,,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/201207234861072384.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
+41,Гелиантус Angustifolius,8,10,солнце,60,180,желтый,,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154002464826196004.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",2
+41,Бузульник зубчатый Othello,7,9,солнце,80,100,желтый,,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153442461220339715.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
+41,Вейник Карл Форестер,5,9,солнце,150,200,зеленый,желтый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153441009521393702.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
+41,Физостегия виргинская Variegata,7,8,солнце,60,80,фиолетовый,,2,умеренный полив,1,https://i.pinimg.com/originals/5c/5d/78/5c5d7835509f8e3437744bad4b4db0ba.jpg,5
+42,Астра новоанглийская,8,10,полутень,150,200,фиолетовый,,4,умеренный полив,0,https://rastenievod.com/wp-content/uploads/2016/06/13-38.jpg,1
+42,Монарда гибридная Blaustrumpf,7,9,полутень,70,100,фиолетовый,,4,умеренный полив,0,https://www.delenka.ru/share/images/ready/921/173_963839.jpg,2
+42,Эхинацея пурпурная,7,9,полутень,90,100,розовый,,4,умеренный полив,0,https://zakazvsad.ru/wp-content/uploads/2022/06/magnus-ehinoczei-kak-vyrastit.jpg,3
+42,Шалфей дубравный Caradonna,6,9,полутень,40,50,фиолетовый,,4,умеренный полив,0,https://leafgarden.ru/wp-content/uploads/2022/04/i_446_1730.jpg,4
+42,Бадан сердцелистный,4,10,полутень,20,40,розовый,,4,умеренный полив,0,https://romashkino.ru/upload/resize_cache/webp/iblock/019/5m29ilgu4vny1d7o1e7sxcf9ytl3utpl/Badan-serdtselistnyy-Lilac-Rose-_Lilak-Rouz_.webp,5
+43,Наперстянка,6,6,полутень,80,100,фиолетовый,белый,4,умеренный полив,0,https://flo.discus-club.ru/images/stories/odnoletnie-rasteniya/naperstyanka/naperstyanka2.jpg,1
+43,Роза флорибунда,6,10,полутень,50,120,розовый,,4,умеренный полив,0,https://e9biwssnpui.exactdn.com/wp-content/uploads/2020/11/fl_burgundy_ice_5_.jpg?strip=all&lossy=1&ssl=1?v=1647374271,2
+43,Герань розанна,4,10,полутень,30,50,фиолетовый,,4,умеренный полив,0,https://www.semenasad.ru/images/catalog/mnogol_trav_rast/geran_gibrid_rozanna.jpg,3
+43,Манжетка,6,9,полутень,45,50,желтый,,4,умеренный полив,0,https://leafgarden.ru/wp-content/uploads/2023/01/54097bd2792171fea39c6eb38ef26069.jpg,4
+44,Молиния,6,10,солнце,40,120,желтый,,4,засухоустойчивые,нет,https://zelenaya-dolina66.ru/assets/images/products/326/big/moliniya-golubaya-heidebraut1.jpg,1
+44,Роза,6,10,солнце,80,100,розовый,,4,умеренный полив,0,https://dolina-sad.ru/upload/resize_cache/webp/resize_cache/iblock/2af/400_400_140cd750bba9870f18aada2478b24840a/74jmg3mcceo95j657ikgrrsbv0evx423.webp,2
+44,Шалфей дубравный Caradonna,6,9,солнце,40,50,фиолетовый,,4,умеренный полив,0,https://leafgarden.ru/wp-content/uploads/2022/04/i_446_1730.jpg,3
+45,Дербенник иволистный,6,9,солнце,80,140,розовый,,3,умеренный полив,0,https://zelenaya-dolina66.ru/assets/images/products/445/big/derbennik-ivolistnyij.jpg,1
+45,Флокс Natural Feelings,6,9,солнце,80,80,розовый,,3,умеренный полив,0,https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcReWHyUNLyq7psmZtrP2sPjmQNNVIAGcBeWlrwE4zg0q2A8u7uv,2
+45,Котовник фассена Six Hills Giant,6,9,солнце,30,60,фиолетовый,,3,умеренный полив,0,https://agro-ra.ru/1720-medium_kotovnikfassenasixhillsgiantjpg/kotovnik-fassena-six-hills-giant.jpg,3
+45,Манжетка мягкая,6,9,солнце,45,50,желтый,,3,умеренный полив,0,https://leafgarden.ru/wp-content/uploads/2023/01/54097bd2792171fea39c6eb38ef26069.jpg,4
+46,Розы шрабы,6,11,солнце,90,200,розовый,,4,умеренный полив,0,https://abies-landshaft.ru/img_medium/rose-4/229%D0%B0%D0%B1%D1%80%D0%B0%D1%85%D0%B0%D0%BC-%D0%B4%D0%B0%D1%80%D0%B1%D0%B8.jpg,1
+46,Шалфей дубравный Caradonna,6,9,солнце,45,90,фиолетовый,,4,умеренный полив,0,https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSmnWltM8xShpSOxT1OgvFDi8jzfDrnOmpLl893nE7c_kQJctBR,2
+46,Котовник фассена,6,9,солнце,40,60,фиолетовый,,3,умеренный полив,0,https://agro-ra.ru/1720-medium_kotovnikfassenasixhillsgiantjpg/kotovnik-fassena-six-hills-giant.jpg,3
+46,Манжетка мягкая,6,9,солнце,45,50,желтый,,3,умеренный полив,0,https://leafgarden.ru/wp-content/uploads/2023/01/54097bd2792171fea39c6eb38ef26069.jpg,4
+47,Роза,6,10,солнце,80,100,розовый,белый,4,умеренный полив,0,https://dolina-sad.ru/upload/resize_cache/webp/resize_cache/iblock/2af/400_400_140cd750bba9870f18aada2478b24840a/74jmg3mcceo95j657ikgrrsbv0evx423.webp,1
+47,Шалфей дубравный,6,9,солнце,45,80,фиолетовый,,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSznKDsYL2veoSyPlHHOsvbvdmeHWiJA4BKo8NSF1r21wwe8lfF,2
+47,Клематис кустовой,4,10,солнце,40,100,фиолетовый,,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu638c2CVFN5cPzWKA7e5bvVasFNVEvNEd5NJsvFaeGHwhucrF,3
+47,Щучка дернистая,6,10,солнце,40,120,желтый,,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgxDySBbU6v9yqRNlb5eZ99jQvx9qQudMD7gpZqelKRgdgkNkL,4
+49,Гейхера Carnival,5,9,полутень,20,40,зеленый,черный,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoPW_TtxVXOaiOxu1spYYvpZEdZMEoDfy-KtHbwRjnPjomY6A,1
+49,Ирис бородатый Black Dragon,6,6,полутень,70,90,черный,,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYocBFlMyCuc39ZHMKOIKCYIRriJK1IhwiA&s,2
+49,Очиток Jose Aubergine,5,9,полутень,45,50,бордовый,розовый,4,умеренный полив,0,https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2GH3fni35PEbkFe6cbFD7GVJpRRSfqGFgsZvxP4ig90F4CkyW,3
+49,Кровохлебка Little Angel,7,9,полутень,20,30,красный,,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbFpnkdzrgsqoLSaAdcwaWY7nXcRvsZ31GnZtsz3I8LB7dlzWV,4
+49,Тюльпан Queen of Night,4,5,полутень,40,60,черный,,3,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfY1pi1d-O9YsSNy0rAN32Y6icFzzRO0rqGw&s,5
+49,Кочедыжник Burgundy Lace,5,9,полутень,60,60,зеленый,бордовый,4,умеренный полив,0,https://lafa.ru/upload/resize_cache/iblock/b9e/1000_1000_1/68983-kochedyzhnik-nipponskiy-burgundi-leys.jpg,6
+49,Цимицифуга Brunette,5,9,полутень,150,180,бордовый,белый,4,умеренный полив,0,https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ1uFlj8g_eDMlrciYTDKpvbxF3sIFcCqRHh-o_ndy3cKaTBkO,7
+49,Споробол раскидистый,5,9,полутень,40,60,желтый,зеленый,4,умеренный полив,0,https://agro-market24.ru/upload/iblock/325/hphvp4slam3n0vnnbvrbczvngp1lc09m.jpg,8
+50,Молиния хайдебраут,4,10,солнце,40,120,зеленый,желтый,4,умеренный полив,1,https://www.uzhniy.ru/upload/webp/resize_cache/0a0/ygft8ae2t8543ksfvv2adqdmbwx5befq/370_0_1/69500374_42f6_11e3_a24c_50465da3695e_1.webp,1
+50,Осока пальмолистная,4,6,солнце,30,100,зеленый,,4,умеренный полив,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BEnFtwaeTHE9Je9XaMjEY8iwrZ8vf_58LptEnPWWjILX1qD4,2
+50,Гортензия Diamante rouge,7,9,солнце,120,150,розовый,,4,умеренный полив,1,https://www.uzhniy.ru/upload/iblock/ba1/gortenziya-daymond-ruzh.jpg,3
+50,Астранция Белл,6,9,солнце,40,70,зеленый,,4,умеренный полив,1,https://www.medra.ru/img/work/nomencl/146425.jpg,4
+50,Гейхера лайм,4,10,солнце,20,25,зеленый,,4,умеренный полив,1,https://sortoman.ru/uploads/product/100/168/201a82c0eb120b9b2f4db077653bc721_2024-01-08_14-34-28.webp,5
+51,Аспарагус,8,9,солнце,90,150,зеленый,,4,умеренный полив,0,https://glav-dacha.ru/wp-content/uploads/2015/12/V-asparaguse-mnogo-mineralov-i-aminokislot.jpg,1
+51,Агастахе гибридный,5,9,солнце,50,100,фиолетовый,,4,умеренный полив,0,https://i5.stat01.com/2/9295/192945480/afacdb/semena-agastahe-gibridnyj-vivat-sinij-cv-m-10sht.jpg,2
+51,Лиатрис колосковый «Альба»,7,9,солнце,50,90,белый,,4,умеренный полив,0,https://lafa.ru/upload/resize_cache/iblock/1be/1000_1000_1/1be1be77a25101aeb3b03626bbea65bc.jpg,3
+51,Флокс метельчатый «Тайна»,6,9,солнце,80,90,фиолетовый,,4,умеренный полив,0,https://sadfloxov.ru/img/work/nomencl/a_12699_4890.JPG,4
+51,Эхинацея пурпурная,7,9,солнце,90,100,розовый,,4,умеренный полив,0,https://zakazvsad.ru/wp-content/uploads/2022/06/magnus-ehinoczei-kak-vyrastit.jpg,5
+51,Кореопсис мутовчатый,7,9,солнце,60,90,желтый,,4,умеренный полив,0,https://i.pinimg.com/564x/78/d4/41/78d441688d10f0f63d7271ccf2370121.jpg,6
+51,Шалфей дубравный,6,9,солнце,45,90,фиолетовый,,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSznKDsYL2veoSyPlHHOsvbvdmeHWiJA4BKo8NSF1r21wwe8lfF,7
+51,Живучка ползучая,5,6,солнце,15,30,бордовый,,4,умеренный полив,0,https://cdn.zavodflora.com/wp-content/uploads/2022/08/%D0%96%D0%B8%D0%B2%D1%83%D1%87%D0%BA%D0%B0-%D0%BF%D0%BE%D0%BB%D0%B7%D1%83%D1%87%D0%B0%D1%8F-%D0%90%D1%82%D1%80%D0%BE%D0%BF%D1%83%D1%80%D0%BF%D1%83%D1%80%D0%B5%D1%8F.jpg,8
