@@ -20,7 +20,7 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(","))
-            return Response({"flowers_id": ""}, status=status.HTTP_200_OK)
+            return Response({"flowers_names": ",".join(flowers)}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
     
 class GardensApiViewSet(viewsets.ModelViewSet):
