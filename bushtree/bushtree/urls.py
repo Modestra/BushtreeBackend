@@ -39,6 +39,7 @@ schema_view = get_schema_view(
 )
 router.register(r"flowers", FlowerApiViewSet)
 router.register(r"seccions", SeccionsApiViewSet)
+router.register(r"gardens", GardensApiViewSet)
 
 urlpatterns = [
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
@@ -46,8 +47,8 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
     path('api/v1/', include(router.urls)),
-    path('flowers/createflowers', FlowerApiViewSet.as_view({'post': 'create'})),
-    path('flowers/list', FlowerApiViewSet.as_view({'get': 'list'})),
+    path('gardens/create', GardensApiViewSet.as_view({'post': 'create'})),
+    path('flowers/list', FlowerApiViewSet.as_view({'post': 'near_flowers'})),
     path('seccions/list', SeccionsApiViewSet.as_view({'get': 'list'})),
     path('seccions/createseccion', SeccionsApiViewSet.as_view({'post': 'create'}))
     

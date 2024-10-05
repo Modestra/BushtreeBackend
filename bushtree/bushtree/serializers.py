@@ -13,3 +13,10 @@ class SeccionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Seccion
         fields = "__all__"
+
+class GardenSerializer(serializers.ModelSerializer):
+    """Форма для получения данных по цветам/цветникам"""
+    
+    class Meta:
+        model = Gardens
+        fields = "__all__"
