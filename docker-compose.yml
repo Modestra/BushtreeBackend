@@ -3,18 +3,6 @@ networks:
   backend:
     driver: bridge
 services:
-  jupiter-notebooks:
-    container_name: notebooks
-    image: jupyter/datascience-notebook:latest
-    env_file: ./bushtree/.env
-    ports:
-      - 8888:8888
-    networks:
-      - backend
-    volumes:
-      - ./Documents/bushtree:/home/notebooks/work
-    depends_on:
-      - app
   app:
     container_name: backend
     env_file: ./bushtree/.env
@@ -51,17 +39,6 @@ services:
       - pgadmin:/var/lib/pgadmin
     depends_on:
       - postgress
-  mongodb:
-    image: mongo:latest
-    container_name: mongo_bushtree
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: Modestra
-      MONGO_INITDB_ROOT_PASSWORD: Terrarik22
-    ports:
-      - "27017:27017"
-    volumes:
-      - ./mongoDb:/data/db
-      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
 volumes:
   dbdata6:
   postgres-data:
