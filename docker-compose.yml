@@ -15,7 +15,6 @@ services:
       - backend
     depends_on:
       - postgress
-      - mongodb
     volumes:
       - ./scripts:/scripts
   postgress:
