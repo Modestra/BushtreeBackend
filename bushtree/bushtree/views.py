@@ -10,6 +10,19 @@ import nbconvert, nbformat, requests, codecs
 from django.conf import settings
 from bushtree.dataset import FlowersSet
 
+def get_info_flowers(flowers : list):
+    flower_list = []
+    print(flowers)
+    try:
+        for flower in flowers:
+            temp_flower = flower.strip(" ")
+            data_flower = Flowers.objects.get(name=temp_flower)
+            flower_list.append(FlowerSerializer(data_flower, many=False).data)
+    except Flowers.DoesNotExist:
+        flower_list.append("")
+    return flower_list
+         
+
 class FlowerApiViewSet(viewsets.ModelViewSet):
     
     queryset = Gardens.objects.all()
@@ -19,8 +32,9 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
     def near_flowers(self, request):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
-            flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(","))
-            return Response({"flowers_names": ",".join(flowers)}, status=status.HTTP_200_OK)
+            flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(" "))
+            json_flowers = get_info_flowers(flowers=flowers)
+            return Response({"flowers_names": ",".join(flowers), "flowers": json_flowers}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
     
 class GardensApiViewSet(viewsets.ModelViewSet):
