@@ -96,5 +96,4 @@ xlrd==2.0.1
 xlwt==1.3.0
 serializers==0.2.4
 future==1.0.0
-
-sklearn
+scikit-learn
