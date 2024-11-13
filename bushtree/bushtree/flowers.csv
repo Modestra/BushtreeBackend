@@ -60,7 +60,7 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 10,Райграс бульбоносный,5,6,солнце,30,46,зеленый,зеленый,5,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152516221458186240.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",3
 10,Астильба Арендса,7,8,солнце,50,100,белый,зеленый,8,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/153816260814045215.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",4
 10,Бадан толстолистный,5,6,солнце,15,30,фиолетовый,зеленый,3,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/152570887801929731.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",5
-10,Вальдштейния тройчатая,5,,солнце,8,15,желтый,зеленый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/370026271673581568.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
+10,Вальдштейния тройчатая,5,7,солнце,8,15,желтый,зеленый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/370026271673581568.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",6
 11,Флокс метельчатый,6,9,солнце,30,150,белый,зеленый,4,умеренный полив,1,"https://www.picturethisai.com/image-handle/website_cmsname/image/1080/154155636244873243.jpeg?x-oss-process=image/format,webp/resize,s_422&v=1.3",1
 11,Очиток (седум) Стардаст,8,9,солнце,40,60,белый,розовый,4,умеренный полив,1,https://www.garshinka.ru/tovar/sedum-stardust,2
 11,Чистец (Сильвер Карпет),8,10,солнце,15,20,зеленый,зеленый,3,умеренный полив,1,https://www.garshinka.ru/tovar/stahis-chistec-silver-carpetsilver-karpet,3
@@ -130,7 +130,7 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 21,Чистец (Сильвер Карпет),8,10,солнце,15,20,зеленый,зеленый,3,умеренный полив,1,https://www.garshinka.ru/tovar/stahis-chistec-silver-carpetsilver-karpet,7
 22,Гиления,6,8,солнце,60,120,белый,розовый,4,умеренный полив,нет,https://alexsad.ru/upload/iblock/cf1/cf1b1095a506622303b575ddc9c168e6.JPG,1
 22,Дельфиниум,6,7,солнце,70,130,белый,зеленый,4,умеренный полив,нет,https://7semyan.ru/upload/iblock/de9/1v7a2ww93d5hfrdfm2ml6yvih2gz182s.jpeg.webp,2
-22,Ясколка биберштейна,4,5,солнце,10,15,белый,белый,4,умеренный полив,нет,https://www.zlatakrona.com/upload/iblock/461/461aa65f4e9c979c1e6d83163115f012.jpg,3
+22,Ясколка биберштейна,4,5,солнце,10,15,белый,зеленый,4,умеренный полив,нет,https://www.zlatakrona.com/upload/iblock/461/461aa65f4e9c979c1e6d83163115f012.jpg,3
 22,"Роза флорибунда
 ",7,10,солнце,80,100,розовый,зеленый,4,умеренный полив,нет,https://www.pervocvet-shop.ru/img/work/nomencl/5207.jpg,4
 23,Роза канадская,6,9,полутень,50,120,розовый,зеленый,3,умеренный полив,да,https://moi-rastenia.ru/wp-content/uploads/2021/10/kanadskaya-roza-Prayri-Dzhoy-1.jpg,1
@@ -156,7 +156,7 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 28,Гаура линдхеймера,7,9,солнце,60,120,белый,зеленый,5,засухоустойчивые,да,https://www.green-ekb.ru/upload/iblock/894/z2is740q4agmopn3lplypg34omf14ex3.jpeg,3
 28,Мак восточный,5,5,солнце,60,100,красный,зеленый,5,засухоустойчивые,да,https://centrosad.ru/1604-medium_0makvostochnyipapaverorientalejpg/mak-vostochnyi-papaver-orientale.jpg,4
 28,Эхинацея пурпурная,7,9,солнце,60,90,розовый,красный,5,засухоустойчивые,да,https://upload.wikimedia.org/wikipedia/commons/8/80/CH_Echinacea_purpurea.jpg,5
-28,Овсяница валисская,5,6,солнце,40,40,зеленый,голубой,5,засухоустойчивые,да,https://vsesorta.ru/upload/iblock/a18/737500i-ovsyanitsa-valisskaya-glaucantha.jpg,6
+28,Овсяница валисская,5,6,солнце,40,40,зеленый,белый,5,засухоустойчивые,да,https://vsesorta.ru/upload/iblock/a18/737500i-ovsyanitsa-valisskaya-glaucantha.jpg,6
 29,Мискантус китайский,8,11,солнце,80,200,зеленый,зеленый,3,умеренный полив,нет,https://upackunion.ru/wp-content/uploads/2024/02/img_9920.jpg,1
 29,Астра новобельгийская Marie Ballard,8,11,солнце,95,95,фиолетовый,зеленый,3,умеренный полив,нет,https://dolina-sad.ru/upload/resize_cache/webp/iblock/954/grylexx8r162tcshs6nb3eorhacty8d5.webp,2
 29,Герань крупнокорневищная Bevan’s Variety,6,7,солнце,30,30,розовый,зеленый,3,умеренный полив,нет,https://shop.plantship.ru/wp-content/uploads/2021/11/geranium-macrorrhizum-bevans-variety.jpg,3
@@ -165,7 +165,7 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 30,Ирис сибирский,6,9,полутень,50,50,фиолетовый,зеленый,4,влаголюбивые,нет,https://russia.ru/storage/flowers/a25c1df3309b6def9503b563831f4f97.jpeg,3
 30,Горец змеиный,6,7,полутень,100,100,розовый,зеленый,4,влаголюбивые,нет,https://lafa.ru/upload/iblock/080/117220-gorets-zmeinyy-superba.jpg,4
 30,Купальница европейская,5,6,полутень,60,60,желтый,зеленый,4,влаголюбивые,нет,https://fermilon.ru/wp-content/uploads/2020/07/7-24-780x464.jpg,5
-30,Незабудка болотная,5,5,полутень,50,50,голубой,зеленый,4,влаголюбивые,нет,https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Myosotis_scorpioides2.jpg/1200px-Myosotis_scorpioides2.jpg,6
+30,Незабудка болотная,5,5,полутень,50,50,синий,зеленый,4,влаголюбивые,нет,https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Myosotis_scorpioides2.jpg/1200px-Myosotis_scorpioides2.jpg,6
 31,Молиния,6,10,солнце,40,120,желтый,зеленый,4,засухоустойчивые,нет,https://zelenaya-dolina66.ru/assets/images/products/326/big/moliniya-golubaya-heidebraut1.jpg,1
 31,Роза флорибунда,6,10,солнце,90,90,красный,зеленый,4,засухоустойчивые,нет,https://www.rozebook.ru/upload/iblock/f81/trgya3yxjy0lwdczmkvsi692xbw9nxb8.png,2
 31,Гейхера,4,10,солнце,15,20,красный,зеленый,4,засухоустойчивые,нет,https://img.7dach.ru/image/1200/00/00/48/2018/12/13/544f6864c6-nomark.jpg,3
@@ -259,13 +259,13 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 47,Шалфей дубравный,6,9,солнце,45,80,фиолетовый,зеленый,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSznKDsYL2veoSyPlHHOsvbvdmeHWiJA4BKo8NSF1r21wwe8lfF,2
 47,Клематис кустовой,4,10,солнце,40,100,фиолетовый,зеленый,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSu638c2CVFN5cPzWKA7e5bvVasFNVEvNEd5NJsvFaeGHwhucrF,3
 47,Щучка дернистая,6,10,солнце,40,120,желтый,зеленый,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgxDySBbU6v9yqRNlb5eZ99jQvx9qQudMD7gpZqelKRgdgkNkL,4
-49,Гейхера Carnival,5,9,полутень,20,40,зеленый,черный,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoPW_TtxVXOaiOxu1spYYvpZEdZMEoDfy-KtHbwRjnPjomY6A,1
-49,Ирис бородатый Black Dragon,6,6,полутень,70,90,черный,зеленый,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYocBFlMyCuc39ZHMKOIKCYIRriJK1IhwiA&s,2
-49,Очиток Jose Aubergine,5,9,полутень,45,50,бордовый,розовый,4,умеренный полив,0,https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2GH3fni35PEbkFe6cbFD7GVJpRRSfqGFgsZvxP4ig90F4CkyW,3
+49,Гейхера Carnival,5,9,полутень,20,40,зеленый,зеленый,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwoPW_TtxVXOaiOxu1spYYvpZEdZMEoDfy-KtHbwRjnPjomY6A,1
+49,Ирис бородатый Black Dragon,6,6,полутень,70,90,фиолетовый,зеленый,4,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkYocBFlMyCuc39ZHMKOIKCYIRriJK1IhwiA&s,2
+49,Очиток Jose Aubergine,5,9,полутень,45,50,розовый,розовый,4,умеренный полив,0,https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS2GH3fni35PEbkFe6cbFD7GVJpRRSfqGFgsZvxP4ig90F4CkyW,3
 49,Кровохлебка Little Angel,7,9,полутень,20,30,красный,зеленый,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbFpnkdzrgsqoLSaAdcwaWY7nXcRvsZ31GnZtsz3I8LB7dlzWV,4
-49,Тюльпан Queen of Night,4,5,полутень,40,60,черный,зеленый,3,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfY1pi1d-O9YsSNy0rAN32Y6icFzzRO0rqGw&s,5
-49,Кочедыжник Burgundy Lace,5,9,полутень,60,60,зеленый,бордовый,4,умеренный полив,0,https://lafa.ru/upload/resize_cache/iblock/b9e/1000_1000_1/68983-kochedyzhnik-nipponskiy-burgundi-leys.jpg,6
-49,Цимицифуга Brunette,5,9,полутень,150,180,бордовый,белый,4,умеренный полив,0,https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ1uFlj8g_eDMlrciYTDKpvbxF3sIFcCqRHh-o_ndy3cKaTBkO,7
+49,Тюльпан Queen of Night,4,5,полутень,40,60,красный,зеленый,3,умеренный полив,0,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfY1pi1d-O9YsSNy0rAN32Y6icFzzRO0rqGw&s,5
+49,Кочедыжник Burgundy Lace,5,9,полутень,60,60,зеленый,фиолетовый,4,умеренный полив,0,https://lafa.ru/upload/resize_cache/iblock/b9e/1000_1000_1/68983-kochedyzhnik-nipponskiy-burgundi-leys.jpg,6
+49,Цимицифуга Brunette,5,9,полутень,150,180,красный,белый,4,умеренный полив,0,https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQQ1uFlj8g_eDMlrciYTDKpvbxF3sIFcCqRHh-o_ndy3cKaTBkO,7
 49,Споробол раскидистый,5,9,полутень,40,60,желтый,зеленый,4,умеренный полив,0,https://agro-market24.ru/upload/iblock/325/hphvp4slam3n0vnnbvrbczvngp1lc09m.jpg,8
 50,Молиния хайдебраут,4,10,солнце,40,120,зеленый,желтый,4,умеренный полив,1,https://www.uzhniy.ru/upload/webp/resize_cache/0a0/ygft8ae2t8543ksfvv2adqdmbwx5befq/370_0_1/69500374_42f6_11e3_a24c_50465da3695e_1.webp,1
 50,Осока пальмолистная,4,6,солнце,30,100,зеленый,зеленый,4,умеренный полив,1,https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9BEnFtwaeTHE9Je9XaMjEY8iwrZ8vf_58LptEnPWWjILX1qD4,2
@@ -279,4 +279,4 @@ flower_beds,name,decorative_terms_start,decorative_terms_end,light,height_from,h
 51,Эхинацея пурпурная,7,9,солнце,90,100,розовый,зеленый,4,умеренный полив,0,https://zakazvsad.ru/wp-content/uploads/2022/06/magnus-ehinoczei-kak-vyrastit.jpg,5
 51,Кореопсис мутовчатый,7,9,солнце,60,90,желтый,зеленый,4,умеренный полив,0,https://i.pinimg.com/564x/78/d4/41/78d441688d10f0f63d7271ccf2370121.jpg,6
 51,Шалфей дубравный,6,9,солнце,45,90,фиолетовый,зеленый,4,умеренный полив,0,https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSznKDsYL2veoSyPlHHOsvbvdmeHWiJA4BKo8NSF1r21wwe8lfF,7
-51,Живучка ползучая,5,6,солнце,15,30,бордовый,зеленый,4,умеренный полив,0,https://cdn.zavodflora.com/wp-content/uploads/2022/08/%D0%96%D0%B8%D0%B2%D1%83%D1%87%D0%BA%D0%B0-%D0%BF%D0%BE%D0%BB%D0%B7%D1%83%D1%87%D0%B0%D1%8F-%D0%90%D1%82%D1%80%D0%BE%D0%BF%D1%83%D1%80%D0%BF%D1%83%D1%80%D0%B5%D1%8F.jpg,8
+51,Живучка ползучая,5,6,солнце,15,30,фиолетовый,зеленый,4,умеренный полив,0,https://cdn.zavodflora.com/wp-content/uploads/2022/08/%D0%96%D0%B8%D0%B2%D1%83%D1%87%D0%BA%D0%B0-%D0%BF%D0%BE%D0%BB%D0%B7%D1%83%D1%87%D0%B0%D1%8F-%D0%90%D1%82%D1%80%D0%BE%D0%BF%D1%83%D1%80%D0%BF%D1%83%D1%80%D0%B5%D1%8F.jpg,8
