@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-wu#i@&gmy!e9*8++k155_-+#p027p4q0^m+-=-kg%)$jit%2x_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181', "localhost:8080"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
@@ -203,7 +203,3 @@ MEDIA_ROOT = BASE_DIR / MEDIA_URL
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# HTTPS подключение (Бесполезно в данном проекте)
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-#SECURE_SSL_REDIRECT = True
