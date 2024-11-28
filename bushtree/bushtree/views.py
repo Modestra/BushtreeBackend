@@ -32,7 +32,7 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
     def near_flowers(self, request):
         serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
-            flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(" "))
+            flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(" ")[0])
             json_flowers = get_info_flowers(flowers=flowers)
             return Response({"flowers_names": ",".join(flowers), "flowers": json_flowers}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
