@@ -4,19 +4,12 @@ from bushtree.models import *
 class FlowerSerializer(serializers.ModelSerializer):
     """Форма для запроса необходимого цветника"""
     class Meta:
-        model = Flowers
+        model = Flower
         fields = '__all__'
-
-class SeccionSerializer(serializers.ModelSerializer):
-    """Форма для получения данных сессии"""
-    
-    class Meta:
-        model = Seccion
-        fields = "__all__"
 
 class GardenSerializer(serializers.ModelSerializer):
     """Форма для получения данных по цветам/цветникам"""
     
     class Meta:
-        model = Gardens
+        model = Garden
         fields = "__all__"

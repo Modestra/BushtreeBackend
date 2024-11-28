@@ -24,6 +24,8 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 router = DefaultRouter()
+router.register(r"flower", FlowerApiViewSet)
+router.register(r"gardens", GardensApiViewSet)
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -37,19 +39,11 @@ schema_view = get_schema_view(
    public=True,
    permission_classes=(permissions.AllowAny,),
 )
-router.register(r"flowers", FlowerApiViewSet)
-router.register(r"seccions", SeccionsApiViewSet)
-router.register(r"gardens", GardensApiViewSet)
 
 urlpatterns = [
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
-    path('api/v1/', include(router.urls)),
-    path('gardens/create', GardensApiViewSet.as_view({'post': 'create'})),
-    path('flowers/list', FlowerApiViewSet.as_view({'post': 'near_flowers'})),
-    path('seccions/list', SeccionsApiViewSet.as_view({'get': 'list'})),
-    path('seccions/createseccion', SeccionsApiViewSet.as_view({'post': 'create'}))
-    
+    path('', include(router.urls)),
 ]

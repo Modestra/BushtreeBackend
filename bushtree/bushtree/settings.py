@@ -16,7 +16,7 @@ import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_SITE_URL = os.getenv('DEFAULT_SITE_URL', default='localhost:8000')
-
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 DATABASE = os.getenv('DATABASE', default='sqlite')
 
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
@@ -153,7 +153,7 @@ STATIC_ROOT = BASE_DIR / STATIC_URL
 
 MEDIA_URL = '/media/'
 
-MEDIA_ROOT = BASE_DIR / MEDIA_URL
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

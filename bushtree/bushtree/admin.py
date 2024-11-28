@@ -1,12 +1,20 @@
 from django.contrib import admin
 from bushtree.models import *
 
-class SeccionAdmin(admin.ModelAdmin):
+class FlowerAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Seccion, SeccionAdmin)
-
-class FlowersAdmin(admin.ModelAdmin):
+class FlowerDatasetAdmin(admin.ModelAdmin):
     pass
 
-admin.site.register(Flowers, FlowersAdmin)
+class FlowerBandAdmin(admin.ModelAdmin):
+    pass
+
+class GardenAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(Flower, FlowerAdmin)
+admin.site.register(FlowerDataset, FlowerDatasetAdmin)
+admin.site.register(Garden, GardenAdmin)
+admin.site.register(FlowerBand, FlowerBandAdmin)

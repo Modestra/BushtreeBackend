@@ -16,16 +16,16 @@ def get_info_flowers(flowers : list):
     try:
         for flower in flowers:
             temp_flower = flower.strip(" ")
-            data_flower = Flowers.objects.get(name=temp_flower)
+            data_flower = Flower.objects.get(name=temp_flower)
             flower_list.append(FlowerSerializer(data_flower, many=False).data)
-    except Flowers.DoesNotExist:
+    except Flower.DoesNotExist:
         flower_list.append("")
     return flower_list
          
 
 class FlowerApiViewSet(viewsets.ModelViewSet):
     
-    queryset = Gardens.objects.all()
+    queryset = Garden.objects.all()
     serializer_class = GardenSerializer
     
     @action(detail=True, methods=["POST"])
@@ -38,7 +38,7 @@ class FlowerApiViewSet(viewsets.ModelViewSet):
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
     
 class GardensApiViewSet(viewsets.ModelViewSet):
-    queryset = Flowers.objects.all()
+    queryset = Flower.objects.all()
     serializer_class = FlowerSerializer
 
     def list(self, request, *args, **kwargs):
@@ -53,17 +53,6 @@ class GardensApiViewSet(viewsets.ModelViewSet):
         serializers.is_valid()
         json_data = FlowersSet.dataset_creategarden(serializers.data["color_main"], serializers.data["color_other"])
         return Response({"gardens": json_data}, status=status.HTTP_200_OK)
-
-class SeccionsApiViewSet(viewsets.ModelViewSet):
-
-    queryset = Seccion.objects.all()
-    serializer_class = SeccionSerializer
-
-    def list(self, request, *args, **kwargs):
-        return super().list(request, *args, **kwargs)
-    
-    def create(self, request, *args, **kwargs):
-        return super().create(request, *args, **kwargs)
 
     
         
