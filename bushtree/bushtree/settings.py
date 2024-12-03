@@ -18,6 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEFAULT_SITE_URL = os.getenv('DEFAULT_SITE_URL', default='localhost:8000')
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 DATABASE = os.getenv('DATABASE', default='sqlite')
+DB_CSV = os.getenv('DB_CSV', default=False)
 
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
 

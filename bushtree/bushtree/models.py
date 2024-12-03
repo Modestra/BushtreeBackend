@@ -37,12 +37,15 @@ class FlowerDataset(models.Model):
     "Цветы, необходимые для выбора карты рассадки. Аналоги цветов находятся в Flower"
     id = models.AutoField(primary_key=True)
     name = models.TextField(null=True)
-    description = models.TextField(null=True)
-    frost_resistance_zone = models.IntegerField()
+    frost_resistance_zone = models.IntegerField(null=True)
     light = models.TextField(null=True)
     watering = models.TextField(null=True)
     color_main = models.TextField(null=True)
     color_other = models.TextField(null=True)
+    decorative_terms_start = models.IntegerField(null=True)
+    decorative_terms_end = models.IntegerField(null=True)
+    height_from = models.IntegerField(null=True)
+    height_to = models.IntegerField(null=True)
     expansion_id = models.IntegerField(null=True)
 class Garden(models.Model):
     """Фотографии цветников. Хранение на стороне сервера"""
