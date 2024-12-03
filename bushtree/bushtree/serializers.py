@@ -1,22 +1,56 @@
 from rest_framework import serializers
 from bushtree.models import *
 
-class FlowerSerializer(serializers.ModelSerializer):
+class FlowerSerializer(serializers.Serializer):
     """Форма для запроса необходимого цветника"""
-    class Meta:
-        model = Flowers
-        fields = '__all__'
+    frost_resistance_zone = serializers.CharField(max_length=255)
+    light = serializers.CharField(max_length=255)
+    watering = serializers.CharField(max_length=255)
+    color_main = serializers.CharField(max_length=255)
+    color_other = serializers.CharField(max_length=255)
+    period_bloosom_start = serializers.CharField(max_length=255)
+    period_bloosom_end = serializers.CharField(max_length=255)
 
-class SeccionSerializer(serializers.ModelSerializer):
-    """Форма для получения данных сессии"""
+    def validate(self, attrs):
+        return super().validate(attrs)
     
-    class Meta:
-        model = Seccion
-        fields = "__all__"
+class FlowerBandIdSerializer(serializers.Serializer):
+    flower_band_id = serializers.CharField(max_length=255)
+    
+    def validate(self, attrs):
+        return super().validate(attrs)
+    
+class FlowerBandSerializer(serializers.Serializer):
+    flower_band_id = serializers.CharField(max_length=255, read_only=True)
+    mass = serializers.CharField(max_length=255)
+    flower_band = serializers.FileField()
 
-class GardenSerializer(serializers.ModelSerializer):
-    """Форма для получения данных по цветам/цветникам"""
+    regex_mask = '/[0-9]+\.(?:jpg|png)/g'
+    def validate(self, attrs):
+        return super().validate(attrs)
     
-    class Meta:
-        model = Gardens
-        fields = "__all__"
+    def create(self, validated_data):
+        flower_band = validated_data.get("flower_band", None)
+        _flower_band_id = str(flower_band).split(".")[0]
+        return FlowerBand.objects.create(flower_band_id=_flower_band_id, **validated_data)
+    
+class GardenSerializer(serializers.Serializer):
+    """Форма для получения данных по картинкам цветников"""
+    garden_id = serializers.CharField(max_length=255, read_only=True)
+    gardens = serializers.FileField()
+
+    def validate(self, attrs):
+        return super().validate(attrs)
+        
+    def create(self, validated_data):
+        gardens = validated_data.get("gardens", None)
+        _gardens_id = str(gardens).split(".")[0]
+        return Garden.objects.create(garden_id=_gardens_id, **validated_data)
+
+class GardenIdSerializer(serializers.Serializer):
+    """Форма для удаления цветников"""
+    garden_id = serializers.CharField(max_length=255)
+
+    def validate(self, attrs):
+        return super().validate(attrs)
+    

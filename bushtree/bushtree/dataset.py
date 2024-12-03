@@ -6,11 +6,12 @@
 #Импорт библиотек
 import pandas as pd
 import numpy as np
-import warnings
+import warnings, csv
 
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 pd.options.mode.chained_assignment = None 
+from bushtree.models import *
 from django.conf import settings
 warnings.filterwarnings("ignore")
 
@@ -18,6 +19,9 @@ warnings.filterwarnings("ignore")
 class FlowersSet():
     """Базовый класс для цветников. Используется для генерации цветников и подходящих для него цветов"""
 
+    columns_name = ['id', 'frost_resistance_zone','decorative_terms_start',
+            'decorative_terms_end', 'height_from',
+            'height_to', 'color_main', 'color_other']
     def __init__(self):
         pass
     pass
@@ -30,10 +34,22 @@ class FlowersSet():
                                       'height_to': [200],
                                       'color_main': [color_main],
                                       'color_other': [color_other]})
-
-        # Подключение к датасетам
-        main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
-        df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
+        
+        columns_name = ['id', 'frost_resistance_zone','decorative_terms_start',
+            'decorative_terms_end', 'height_from',
+            'height_to', 'color_main', 'color_other']
+        
+        columns_name_dataset = ['flower_beds', 'decorative_terms_start', 'decorative_terms_end', 
+                                'height_from', 'height_to', 'color_main', 'color_other', 'cloud_number']
+        
+        if settings.DB_CSV:
+            with (f'{settings.BASE_DIR}/bushtree/flowers.csv') as csvfile:
+                writer = csv.writer(csvfile, quotechar=",", quoting=csv.QUOTE_MINIMAL)
+                writer.writerow()
+        else:
+            # Подключение к датасетам
+            main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
+            df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
        
         # Датасет с цветами
         columns_name = ['id', 'frost_resistance_zone','decorative_terms_start',
@@ -93,15 +109,23 @@ class FlowersSet():
     def GetFlowers(flower_beds_num : list):
         """Возвращает имена цветов, подходящие для этого цветника."""
         flowers_list = []
-        
-        # Подключение к датасетам
-        main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
-        df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
 
-        # Датасет с цветами
         columns_name = ['id', 'frost_resistance_zone','decorative_terms_start',
-                   'decorative_terms_end', 'height_from',
-                   'height_to', 'color_main', 'color_other']
+            'decorative_terms_end', 'height_from',
+            'height_to', 'color_main', 'color_other']
+        columns_flower_name = ['flower_beds', 
+            'decorative_terms_start', 'decorative_terms_end', 'height_from', 
+            'height_to', 'color_main', 'color_other', 'cloud_number']
+        
+        if settings.DB_CSV:
+            with open("base_flowerdataset.csv", newline=",") as csvfile:
+                writer = csv.writer(f'{settings.BASE_DIR}/bushtree/base_flowerdataset.csv', quotechar=',', quoting=csv.QUOTE_MINIMAL)
+                writer.writerow(columns_name)
+                
+        else:
+            # Подключение к датасетам
+            main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
+            df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
         
         data_flowers = df[columns_name]
         data_flowers = data_flowers[data_flowers['frost_resistance_zone'] < 5].drop('frost_resistance_zone', axis=1).reset_index(drop=True)
@@ -132,4 +156,4 @@ class FlowersSet():
                 for k in temp_data.iloc[neigh_temp.predict_proba(flower).argsort(axis=1)[:,:-2:-1][0]]['id']:
                     flowers_list.append(df[df['id'] == k]['name'].values[0])      
             break
-        return flowers_list            
+        return flowers_list
