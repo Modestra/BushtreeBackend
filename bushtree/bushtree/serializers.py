@@ -14,7 +14,7 @@ class FlowerSerializer(serializers.Serializer):
     def validate(self, attrs):
         return super().validate(attrs)
     
-class FlowerBandDeleteSerializer(serializers.Serializer):
+class FlowerBandIdSerializer(serializers.Serializer):
     flower_band_id = serializers.CharField(max_length=255)
     
     def validate(self, attrs):
@@ -34,8 +34,9 @@ class FlowerBandSerializer(serializers.Serializer):
         _flower_band_id = str(flower_band).split(".")[0]
         return FlowerBand.objects.create(flower_band_id=_flower_band_id, **validated_data)
     
-class GardenDeleteSerializer(serializers.Serializer):
-    garden_id = serializers.CharField(max_length=255)
+class GardenSerializer(serializers.Serializer):
+    """Форма для получения данных по картинкам цветников"""
+    garden_id = serializers.CharField(max_length=255, read_only=True)
     gardens = serializers.FileField()
 
     def validate(self, attrs):
@@ -46,8 +47,8 @@ class GardenDeleteSerializer(serializers.Serializer):
         _gardens_id = str(gardens).split(".")[0]
         return Garden.objects.create(garden_id=_gardens_id, **validated_data)
 
-class GardenSerializer(serializers.Serializer):
-    """Форма для получения данных по цветам/цветникам"""
+class GardenIdSerializer(serializers.Serializer):
+    """Форма для удаления цветников"""
     garden_id = serializers.CharField(max_length=255)
 
     def validate(self, attrs):
