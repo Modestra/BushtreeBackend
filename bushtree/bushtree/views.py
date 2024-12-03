@@ -29,11 +29,11 @@ class FlowerApiViewSet(ListViewSet):
     queryset = Flower.objects.all()
     serializer_class = FlowerSerializer
     
-    @action(detail=True, methods=["POST"])
+    @action(detail=False, methods=["POST"], serializer_class=GardenSerializer)
     def near_flowers(self, request):
         serializer = GardenSerializer(data=request.data)
         if serializer.is_valid():
-            flowers = FlowersSet.GetFlowers(str(serializer.data['gardens']).split(" ")[0])
+            flowers = FlowersSet.GetFlowers(str(serializer.data['garden_id']).split(" ")[0])
             json_flowers = get_info_flowers(flowers=flowers)
             return Response({"flowers_names": ",".join(flowers), "flowers": json_flowers}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
@@ -45,7 +45,7 @@ class FlowerApiViewSet(ListViewSet):
             json_data = FlowersSet.dataset_creategarden(serializers.data["color_main"], serializers.data["color_other"])
             return Response({"gardens": json_data}, status=status.HTTP_200_OK)
     
-class GardensApiViewSet(ListViewSet):
+class GardensApiViewSet(CreateListViewSet):
     """Фотографии готовых цветников. Основная модель взаимодействия"""
     queryset = Garden.objects.all()
     serializer_class = GardenSerializer
@@ -57,12 +57,29 @@ class GardensApiViewSet(ListViewSet):
             return Response({"gardens": json_data[0]}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
     
-    def create(self, request, *args, **kwargs):
+    @action(detail=False, methods=["post"], serializer_class=GardenSerializer)
+    def create_garden(self, request):
         serializers = GardenSerializer(data=request.data)
         if serializers.is_valid():
             json_data = FlowersSet.dataset_creategarden(serializers.data["color_main"], serializers.data["color_other"])
             return Response({"gardens": json_data}, status=status.HTTP_200_OK)
         return Response({"error": "Некорректный запрос"}, status=status.HTTP_400_BAD_REQUEST)
+    
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
+    
+    @swagger_auto_schema(request_body=GardenSerializer)
+    @action(detail=False, methods=["delete"], serializer_class=GardenSerializer)
+    def delete_image(self, request):
+        serializers = FlowerBandDeleteSerializer(data=request.data)
+        if serializers.is_valid():
+            flowerband_url = os.path.join(settings.MEDIA_ROOT, f"garden/{serializers.data["garden_id"]}.png")
+            files = FlowerBand.objects.filter(flower_band_id=serializers.data["flower_band_id"]).delete()
+            if os.path.exists(flowerband_url):
+                os.remove(flowerband_url)
+                return Response({"success": "Файл удален"}, status=status.HTTP_204_NO_CONTENT)
+            return Response({"error": "Некорректный запрос"}, status=status.HTTP_400_BAD_REQUEST) 
+        return Response({"error": "Не удалось найти файл в media"}, status=status.HTTP_400_BAD_REQUEST)
     
 
 class FlowerBandApiViewSet(CreateListViewSet):

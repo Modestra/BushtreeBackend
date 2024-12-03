@@ -33,6 +33,18 @@ class FlowerBandSerializer(serializers.Serializer):
         flower_band = validated_data.get("flower_band", None)
         _flower_band_id = str(flower_band).split(".")[0]
         return FlowerBand.objects.create(flower_band_id=_flower_band_id, **validated_data)
+    
+class GardenDeleteSerializer(serializers.Serializer):
+    garden_id = serializers.CharField(max_length=255)
+    gardens = serializers.FileField()
+
+    def validate(self, attrs):
+        return super().validate(attrs)
+        
+    def create(self, validated_data):
+        gardens = validated_data.get("gardens", None)
+        _gardens_id = str(gardens).split(".")[0]
+        return Garden.objects.create(garden_id=_gardens_id, **validated_data)
 
 class GardenSerializer(serializers.Serializer):
     """Форма для получения данных по цветам/цветникам"""
