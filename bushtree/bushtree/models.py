@@ -13,9 +13,8 @@ class Flower(models.Model):
     #Цвета
     color_main = models.TextField(null=True)
     color_other = models.TextField(null=True)
-    #Период цветения
-    period_bloosom_start = models.IntegerField(null=True)
-    period_bloosom_end = models.IntegerField(null=True)
+    height_from = models.IntegerField(null=True)
+    height_to = models.IntegerField(null=True)
     #Дополнительная информация
     decorative_terms_start = models.TextField(null=True)
     decorative_terms_end = models.TextField(null=True)
@@ -30,23 +29,30 @@ class Flower(models.Model):
     use_in_landscape_design = models.TextField(null=True)
     cleaning_for_the_winter = models.TextField(null=True)
     shelter_for_the_winter = models.TextField(null=True)
+    pruning = models.TextField(null=True)
     winter_hardiness = models.TextField(null=True)
     keeping = models.TextField(null=True)
 
 class FlowerDataset(models.Model):
-    "Цветы, необходимые для выбора карты рассадки. Аналоги цветов находятся в Flower"
+    #Обновить таблицу
     id = models.AutoField(primary_key=True)
     name = models.TextField(null=True)
-    frost_resistance_zone = models.IntegerField(null=True)
+    description = models.TextField(null=True)
+    #Освещенность и влажность, морозостойкость
+    frost_resistance_zone = models.IntegerField(null=True, default=0)
     light = models.TextField(null=True)
-    watering = models.TextField(null=True)
+    watering = models.TextField(null=True) #Режим полива
+    #Цвета
     color_main = models.TextField(null=True)
     color_other = models.TextField(null=True)
-    decorative_terms_start = models.IntegerField(null=True)
-    decorative_terms_end = models.IntegerField(null=True)
     height_from = models.IntegerField(null=True)
     height_to = models.IntegerField(null=True)
-    expansion_id = models.IntegerField(null=True)
+    #Дополнительная информация
+    decorative_terms_start = models.TextField(null=True)
+    decorative_terms_end = models.TextField(null=True)
+    cloud_number = models.TextField(null=True)
+    flower_beds = models.TextField(null=True)
+
 class Garden(models.Model):
     """Фотографии цветников. Хранение на стороне сервера"""
     id = models.AutoField(primary_key=True)

@@ -22,6 +22,10 @@ DB_CSV = os.getenv('DB_CSV', default=False)
 
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
 
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+SECURE_SSL_REDIRECT = True
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -32,7 +36,7 @@ SECRET_KEY = 'django-insecure-wu#i@&gmy!e9*8++k155_-+#p027p4q0^m+-=-kg%)$jit%2x_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181', "localhost:8080"]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181', "localhost:8080", "bushtree.modestradev.ru"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
