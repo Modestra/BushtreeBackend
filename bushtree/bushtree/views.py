@@ -64,7 +64,6 @@ class GardensApiViewSet(ListViewSet):
             return Response(serializers.data, status=status.HTTP_400_BAD_REQUEST)
         return Response({"error": "Не удалось создать файл в media"}, status=status.HTTP_400_BAD_REQUEST)
     
-    
     @swagger_auto_schema(request_body=GardenIdSerializer)
     @action(detail=False, methods=["delete"], serializer_class=GardenIdSerializer)
     def delete_image(self, request):

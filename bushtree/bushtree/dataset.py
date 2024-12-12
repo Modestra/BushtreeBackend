@@ -43,9 +43,7 @@ class FlowersSet():
                                 'height_from', 'height_to', 'color_main', 'color_other', 'cloud_number']
         
         if settings.DB_CSV:
-            with (f'{settings.BASE_DIR}/bushtree/flowers.csv') as csvfile:
-                writer = csv.writer(csvfile, quotechar=",", quoting=csv.QUOTE_MINIMAL)
-                writer.writerow()
+            pass
         else:
             # Подключение к датасетам
             main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
