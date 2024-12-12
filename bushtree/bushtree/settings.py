@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.postgres',
     'bushtree',
+    'django_extensions',
     'drf_yasg',
     'pkg_resources',
     'rest_framework',
