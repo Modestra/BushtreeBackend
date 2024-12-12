@@ -19,12 +19,12 @@ DEFAULT_SITE_URL = os.getenv('DEFAULT_SITE_URL', default='localhost:8000')
 SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 DATABASE = os.getenv('DATABASE', default='sqlite')
 DB_CSV = os.getenv('DB_CSV', default=False)
-
+DEBUG = os.getenv('DEBUG', default=False)
 RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
 SECURE_SSL_REDIRECT = True
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -54,7 +54,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'pkg_resources',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
+    'sslserver'
 ]
 
 MIDDLEWARE = [
