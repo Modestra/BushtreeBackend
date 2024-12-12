@@ -1,19 +1,18 @@
 from rest_framework import serializers
 from bushtree.models import *
 
-class FlowerSerializer(serializers.Serializer):
+class FlowerSerializer(serializers.ModelSerializer):
     """Форма для запроса необходимого цветника"""
-    frost_resistance_zone = serializers.CharField(max_length=255)
-    light = serializers.CharField(max_length=255)
-    watering = serializers.CharField(max_length=255)
+
+    class Meta:
+        model = Flower
+        fields = "__all__"
+class ColorSerializer(serializers.Serializer):
     color_main = serializers.CharField(max_length=255)
     color_other = serializers.CharField(max_length=255)
-    period_bloosom_start = serializers.CharField(max_length=255)
-    period_bloosom_end = serializers.CharField(max_length=255)
 
     def validate(self, attrs):
         return super().validate(attrs)
-    
 class FlowerBandIdSerializer(serializers.Serializer):
     flower_band_id = serializers.CharField(max_length=255)
     

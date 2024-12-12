@@ -39,9 +39,9 @@ class FlowerApiViewSet(ListViewSet):
             return Response({"flowers_names": ",".join(flowers), "flowers": json_flowers}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
     
-    @action(detail=False, methods=["post"], serializer_class=FlowerSerializer)
+    @action(detail=False, methods=["post"], serializer_class=ColorSerializer)
     def create_garden(self, request):
-        serializers = FlowerSerializer(data=request.data)
+        serializers = ColorSerializer(data=request.data)
         if serializers.is_valid():
             json_data = FlowersSet.dataset_creategarden(serializers.data["color_main"], serializers.data["color_other"])
             return Response({"gardens": json_data}, status=status.HTTP_200_OK)

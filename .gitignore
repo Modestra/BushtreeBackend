@@ -4,3 +4,4 @@ mongoDB
 **/media
 **/__pycache__
 **/.env
+**/*.pem
