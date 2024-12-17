@@ -9,21 +9,17 @@ from bushtree.serializers import *
 from bushtree.models import *
 from bushtree.mixin import *
 import os
+from django.forms.models import model_to_dict
 from django.conf import settings
 from bushtree.dataset import FlowersSet
 
 def get_info_flowers(flowers : list):
     flower_list = []
-    print(flowers)
-    try:
-        for flower in flowers:
-            temp_flower = flower.strip(" ")
-            data_flower = Flower.objects.get(name=temp_flower)
-            flower_list.append(FlowerSerializer(data_flower, many=False).data)
-    except Flower.DoesNotExist:
-        flower_list.append("")
+    for f in flowers:
+        flower = Flower.objects.filter(name=f).first()
+        flower = model_to_dict(flower)
+        flower_list.append(flower)
     return flower_list
-         
 
 class FlowerApiViewSet(ListViewSet):
     """Получить полную информацию по цветам"""
