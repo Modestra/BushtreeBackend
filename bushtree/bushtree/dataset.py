@@ -15,6 +15,20 @@ from bushtree.models import *
 from django.conf import settings
 warnings.filterwarnings("ignore")
 
+def get_flowerdataset_values():
+    main_data = pd.DataFrame(FlowerDataset.objects.all().values())
+    main_data["cloud_number"] = pd.to_numeric(main_data["cloud_number"])
+    main_data["flower_beds"] = pd.to_numeric(main_data["flower_beds"])
+    main_data["decorative_terms_start"] = pd.to_numeric(main_data["decorative_terms_start"])
+    main_data["decorative_terms_end"] = pd.to_numeric(main_data["decorative_terms_end"])
+    return main_data
+
+def get_flowers_values():
+    df = pd.DataFrame(Flower.objects.all().values())
+    df["decorative_terms_start"] = pd.to_numeric(df["decorative_terms_start"])
+    df["decorative_terms_end"] = pd.to_numeric(df["decorative_terms_end"])
+    return df
+    
 
 class FlowersSet():
     """Базовый класс для цветников. Используется для генерации цветников и подходящих для него цветов"""
@@ -25,7 +39,6 @@ class FlowersSet():
     def __init__(self):
         pass
     pass
-
 
     def dataset_creategarden(color_main, color_other):
        
@@ -42,15 +55,14 @@ class FlowersSet():
         columns_name_dataset = ['flower_beds', 'decorative_terms_start', 'decorative_terms_end', 
                                 'height_from', 'height_to', 'color_main', 'color_other', 'cloud_number']
         
-        main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
-        df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
-       
+        df = get_flowers_values()
+        main_data = get_flowerdataset_values()
         # Датасет с цветами
         columns_name = ['id', 'frost_resistance_zone','decorative_terms_start',
                    'decorative_terms_end', 'height_from',
                    'height_to', 'color_main', 'color_other']
         
-        data_flowers = df[columns_name]
+        data_flowers = df[columns_name] #Ошибка
         data_flowers = data_flowers[data_flowers['frost_resistance_zone'] < 5].drop('frost_resistance_zone', axis=1).reset_index(drop=True)
 
         # Датасет цветников
@@ -111,8 +123,8 @@ class FlowersSet():
             'decorative_terms_start', 'decorative_terms_end', 'height_from', 
             'height_to', 'color_main', 'color_other', 'cloud_number']
         
-        main_data = pd.read_csv(f'{settings.BASE_DIR}/bushtree/flowers.csv')
-        df = pd.read_csv(f'{settings.BASE_DIR}/bushtree/Update.csv')
+        df = get_flowers_values()
+        main_data = get_flowerdataset_values()
         
         data_flowers = df[columns_name]
         data_flowers = data_flowers[data_flowers['frost_resistance_zone'] < 5].drop('frost_resistance_zone', axis=1).reset_index(drop=True)
