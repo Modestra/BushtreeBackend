@@ -103,6 +103,6 @@ class FlowerBandApiViewSet(ListViewSet):
                 return Response({"success": "Файл удален"}, status=status.HTTP_204_NO_CONTENT)
             return Response({"error": "Некорректный запрос"}, status=status.HTTP_400_BAD_REQUEST) 
         return Response({"error": "Не удалось найти файл в media"}, status=status.HTTP_400_BAD_REQUEST)
-
+    
     
         
