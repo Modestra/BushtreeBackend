@@ -15,7 +15,7 @@ RUN_TYPE = os.getenv('RUN_TYPE', default='LOCAL')
 SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '0.0.0.0', '185.135.82.172', '45.12.74.181', "localhost:8080"]
+ALLOWED_HOSTS = ["localhost:8080", "backend.bushtree.ru"]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
