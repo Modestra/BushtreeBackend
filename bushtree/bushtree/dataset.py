@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-#Импорт библиотек
 import pandas as pd
 import numpy as np
-import warnings, csv
+import warnings
 
 from sklearn.preprocessing import OrdinalEncoder, StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
