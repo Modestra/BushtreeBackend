@@ -45,7 +45,6 @@ class FlowerApiViewSet(ListViewSet):
         serializers = ColorSerializer(data=request.data)
         if serializers.is_valid():
             flowers = Flower.objects.filter(color_main=serializers.data["color_main"], color_other=serializers.data["color_other"])
-            flowers_result = [model_to_dict(f, fields=['id', 'name','color_main', 'color_other'])]
             return Response({"flowers": [model_to_dict(f, fields=['id', 'name','color_main', 'color_other']) for f in flowers]})
         return Response({"error": "Ошибка"}, status=status.HTTP_400_BAD_REQUEST)
 
