@@ -8,7 +8,6 @@ from drf_yasg import openapi
 
 router = DefaultRouter()
 router.register(r"flower", FlowerApiViewSet)
-router.register(r"gardens", GardensApiViewSet)
 router.register(r"flowerband", FlowerBandApiViewSet)
 
 schema_view = get_schema_view(
