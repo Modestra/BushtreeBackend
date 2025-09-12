@@ -9,21 +9,17 @@ from bushtree.serializers import *
 from bushtree.models import *
 from bushtree.mixin import *
 import os
+from django.forms.models import model_to_dict
 from django.conf import settings
 from bushtree.dataset import FlowersSet
 
 def get_info_flowers(flowers : list):
     flower_list = []
-    print(flowers)
-    try:
-        for flower in flowers:
-            temp_flower = flower.strip(" ")
-            data_flower = Flower.objects.get(name=temp_flower)
-            flower_list.append(FlowerSerializer(data_flower, many=False).data)
-    except Flower.DoesNotExist:
-        flower_list.append("")
+    for f in flowers:
+        flower = Flower.objects.filter(name=f).first()
+        flower = model_to_dict(flower)
+        flower_list.append(flower)
     return flower_list
-         
 
 class FlowerApiViewSet(ListViewSet):
     """Получить полную информацию по цветам"""
@@ -34,7 +30,7 @@ class FlowerApiViewSet(ListViewSet):
     def near_flowers(self, request):
         serializer = GardenIdSerializer(data=request.data)
         if serializer.is_valid():
-            flowers = FlowersSet.GetFlowers(str(serializer.data['garden_id']).split(" ")[0])
+            flowers = FlowersSet.GetFlowers(str(serializer.data['garden_id']).split(" "))
             json_flowers = get_info_flowers(flowers=flowers)
             return Response({"flowers_names": ",".join(flowers), "flowers": json_flowers}, status=status.HTTP_200_OK)
         return Response({"error": "Не удалось загрузить данные. Невалидная форма"}, status=status.HTTP_400_BAD_REQUEST)
@@ -107,6 +103,6 @@ class FlowerBandApiViewSet(ListViewSet):
                 return Response({"success": "Файл удален"}, status=status.HTTP_204_NO_CONTENT)
             return Response({"error": "Некорректный запрос"}, status=status.HTTP_400_BAD_REQUEST) 
         return Response({"error": "Не удалось найти файл в media"}, status=status.HTTP_400_BAD_REQUEST)
-
+    
     
         
