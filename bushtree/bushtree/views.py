@@ -3,20 +3,13 @@ from rest_framework.parsers import MultiPartParser, JSONParser
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.response import Response
 from rest_framework.decorators import action
+from bushtree.utils import get_info_flowers
 from bushtree.serializers import *
 from bushtree.models import *
 from bushtree.mixin import *
 from django.forms.models import model_to_dict
 from django.conf import settings
 from bushtree.dataset import FlowersSet
-
-def get_info_flowers(flowers : list):
-    flower_list = []
-    for f in flowers:
-        flower = Flower.objects.filter(name=f).first()
-        flower = model_to_dict(flower)
-        flower_list.append(flower)
-    return flower_list
 
 class FlowerApiViewSet(ListViewSet):
     """Получить полную информацию по цветам"""
@@ -65,5 +58,23 @@ class FlowerBandApiViewSet(ListViewSet):
             return Response(serializers.data, status=status.HTTP_400_BAD_REQUEST)
         return Response({"error": "Не удалось создать файл в media"}, status=status.HTTP_400_BAD_REQUEST)
     
+class MediaApiViewSet(ListViewSet):
+    """Взаимодействие с медиа файлами проекта"""
+    queryset = MediaRegistration.objects.all()
+    serializer_class = MediaImagesSerializer
+    parser_classes=(JSONParser, MultiPartParser)
+
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+    
+    @swagger_auto_schema(parser_classes=MultiPartParser)
+    @action(detail=False, methods=["post"], serializer_class=MediaImagesSerializer, parser_classes=[MultiPartParser])
+    def load_file(self, request, *args, **kwargs):
+        """Загрузка файла в медиа"""
+        serializers = MediaImagesSerializer(data=request.data)
+        if serializers.is_valid():
+            serializers.save()
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
+        return Response({"error": "Не удалось создать файл в media"}, status=status.HTTP_400_BAD_REQUEST)
     
         

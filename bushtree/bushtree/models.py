@@ -54,16 +54,24 @@ class FlowerDataset(models.Model):
     flower_beds = models.TextField(null=True)
 
 class Garden(models.Model):
-    """Фотографии цветников. Хранение на стороне сервера"""
+    """Фотографии цветников"""
     id = models.AutoField(primary_key=True)
     garden_id = models.IntegerField(default=0)
-    gardens = models.FileField(upload_to="garden/", max_length=100)
+    file = models.FileField(upload_to="gardens/", max_length=100)
 
 class FlowerBand(models.Model):
-    """Карта рассадки цветов по номерам. mass - количество цветов, необходимое для карты рассадки"""
+    """Карта рассадки цветов по номерам"""
     id = models.AutoField(primary_key=True)
-    flower_band_id = models.IntegerField(default=0)
-    mass = models.PositiveIntegerField()
-    flower_band = models.FileField(upload_to="flowerband/", max_length=100)
+    file = models.FileField(upload_to="flowerbands/", max_length=100)
+
+class ImagesModel(models.Model):
+    id = models.AutoField(primary_key=True)
+    file = models.FileField(upload_to="images/", max_length=100)
+
+class MediaRegistration(models.Model):
+    """Регистрация загруженных фотграфий"""
+    id = models.AutoField(primary_key=True)
+    basedir = models.TextField(null=False)
+    filename = models.CharField(max_length=255, null=False)
 
 

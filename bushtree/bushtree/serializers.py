@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from bushtree.models import *
+from django.conf import settings
+from bushtree.utils import MediaDir
 
 class FlowerSerializer(serializers.ModelSerializer):
     """Форма для запроса необходимого цветника"""
@@ -7,17 +9,37 @@ class FlowerSerializer(serializers.ModelSerializer):
     class Meta:
         model = Flower
         fields = "__all__"
+
 class ColorSerializer(serializers.Serializer):
     color_main = serializers.CharField(max_length=255)
     color_other = serializers.CharField(max_length=255)
 
     def validate(self, attrs):
         return super().validate(attrs)
+
 class FlowerBandIdSerializer(serializers.Serializer):
     flower_band_id = serializers.CharField(max_length=255)
     
     def validate(self, attrs):
         return super().validate(attrs)
+    
+class MediaImagesSerializer(serializers.Serializer):
+    basedir = serializers.CharField(max_length=255)
+    filename = serializers.FileField()
+
+    def create(self, validated_data):
+        dir = validated_data.get("basedir", None)
+        file = validated_data.get("filename", None)
+        if dir == "flowerbands":
+            FlowerBand.objects.create(file=file)
+        elif dir == "gardens":
+            Garden.objects.create(file=file)
+        elif dir == "images":
+            ImagesModel.objects.create(file=file)
+        return MediaRegistration.objects.create(basedir=dir, filename=file)
+        
+    def save(self, **kwargs):
+        return super().save(**kwargs)
     
 class FlowerBandSerializer(serializers.Serializer):
     flower_band_id = serializers.CharField(max_length=255, read_only=True)
