@@ -36,7 +36,7 @@ class MediaImagesSerializer(serializers.Serializer):
             Garden.objects.create(file=file)
         elif dir == "images":
             ImagesModel.objects.create(file=file)
-        return MediaRegistration.objects.create(basedir=dir, filename=file)
+        return MediaRegistration.objects.get_or_create(basedir=dir, filename=file)
         
     def save(self, **kwargs):
         return super().save(**kwargs)
