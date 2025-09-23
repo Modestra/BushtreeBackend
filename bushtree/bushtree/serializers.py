@@ -57,8 +57,8 @@ class FlowerBandSerializer(serializers.Serializer):
     
 class GardenSerializer(serializers.Serializer):
     """Форма для получения данных по картинкам цветников"""
-    garden_id = serializers.CharField(max_length=255, read_only=True)
-    gardens = serializers.FileField()
+    flower_count = serializers.CharField(max_length=255, read_only=True)
+    file = serializers.FileField()
 
     def validate(self, attrs):
         return super().validate(attrs)

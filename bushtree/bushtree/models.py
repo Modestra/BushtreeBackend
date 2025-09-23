@@ -56,7 +56,7 @@ class FlowerDataset(models.Model):
 class Garden(models.Model):
     """Фотографии цветников"""
     id = models.AutoField(primary_key=True)
-    garden_id = models.IntegerField(default=0)
+    flower_count = models.IntegerField(default=0)
     file = models.FileField(upload_to="gardens/", max_length=100)
 
 class FlowerBand(models.Model):

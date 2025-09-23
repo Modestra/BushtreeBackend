@@ -9,6 +9,7 @@ from drf_yasg import openapi
 router = DefaultRouter()
 router.register(r"flower", FlowerApiViewSet)
 router.register(r"media", MediaApiViewSet)
+router.register(r"gardens", GardensApiViewSet)
 
 schema_view = get_schema_view(
    openapi.Info(
@@ -29,5 +30,6 @@ urlpatterns = [
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('api/media/<base_dir>/<image>', MediaApiViewSet.as_view({"get": "download_file"}, name="api"))
+    path('api/media/<base_dir>/<image>', MediaApiViewSet.as_view({"get": "download_file"}, name="api")),
+    path('api/gardens/<image>', GardensApiViewSet.as_view({"get": "load_image"}))
 ]

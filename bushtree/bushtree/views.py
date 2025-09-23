@@ -3,9 +3,7 @@ from rest_framework.parsers import MultiPartParser, JSONParser
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework.response import Response
 from rest_framework.decorators import action
-from rest_framework.generics import RetrieveAPIView
-from rest_framework.renderers import StaticHTMLRenderer
-from django.http import HttpResponseNotFound, FileResponse
+from django.http import FileResponse
 from bushtree.utils import get_info_flowers
 from bushtree.serializers import *
 from bushtree.models import *
@@ -13,7 +11,7 @@ from bushtree.mixin import *
 from django.forms.models import model_to_dict
 from django.conf import settings
 from bushtree.dataset import FlowersSet
-import os, base64
+import os
 
 class FlowerApiViewSet(ListViewSet):
     """Получить полную информацию по цветам"""
@@ -45,6 +43,13 @@ class FlowerApiViewSet(ListViewSet):
             return Response({"flowers": [model_to_dict(f, fields=['id', 'name','color_main', 'color_other']) for f in flowers]})
         return Response({"error": "Ошибка"}, status=status.HTTP_400_BAD_REQUEST)
     
+class GardensApiViewSet(ListViewSet):
+    queryset = Garden.objects.all()
+    serializer_class = GardenSerializer
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    
 class MediaApiViewSet(ListViewSet):
     """Взаимодействие с медиа файлами проекта"""
     queryset = MediaRegistration.objects.all()
@@ -73,8 +78,6 @@ class MediaApiViewSet(ListViewSet):
         image_url = os.path.join(settings.MEDIA_ROOT, base_dir, image)
         if not os.path.exists(image_url):
             return Response("Image not found", status=404)
-        with open(image_url, 'rb') as f:
-            image_data = f.read()
         return FileResponse(open(image_url, 'rb'), content_type = 'image/png')
     
         
