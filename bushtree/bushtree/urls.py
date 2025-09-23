@@ -31,5 +31,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/media/<base_dir>/<image>', MediaApiViewSet.as_view({"get": "download_file"}, name="api")),
-    path('api/gardens/<image>', GardensApiViewSet.as_view({"get": "load_image"}))
 ]

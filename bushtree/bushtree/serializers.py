@@ -1,7 +1,5 @@
 from rest_framework import serializers
 from bushtree.models import *
-from django.conf import settings
-from bushtree.utils import MediaDir
 
 class FlowerSerializer(serializers.ModelSerializer):
     """Форма для запроса необходимого цветника"""
@@ -57,6 +55,7 @@ class FlowerBandSerializer(serializers.Serializer):
     
 class GardenSerializer(serializers.Serializer):
     """Форма для получения данных по картинкам цветников"""
+    flower_id = serializers.IntegerField(read_only=True)
     flower_count = serializers.CharField(max_length=255, read_only=True)
     file = serializers.FileField()
 
