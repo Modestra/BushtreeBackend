@@ -1,4 +1,3 @@
-import uuid
 from django.db import models 
 class Flower(models.Model): 
     """Цветы, используемые для рассады на цветниках. Полная информация"""
@@ -56,6 +55,7 @@ class FlowerDataset(models.Model):
 class Garden(models.Model):
     """Фотографии цветников"""
     id = models.AutoField(primary_key=True)
+    flower_id = models.IntegerField(default=0)
     flower_count = models.IntegerField(default=0)
     file = models.FileField(upload_to="gardens/", max_length=100)
 
