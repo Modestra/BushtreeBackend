@@ -77,7 +77,7 @@ class MediaApiViewSet(ListViewSet):
         image = kwargs.get("image", None)
         image_url = os.path.join(settings.MEDIA_ROOT, base_dir, image)
         if not os.path.exists(image_url):
-            return Response("Image not found", status=404)
+            return FileResponse(open(os.path.join(settings.MEDIA_ROOT, "placeholder_noimage.png"), 'rb'), content_type = 'image/png')
         return FileResponse(open(image_url, 'rb'), content_type = 'image/png')
     
         
